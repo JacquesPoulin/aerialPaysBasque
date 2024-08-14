@@ -1,30 +1,30 @@
-// ! Datas de la navbar
-const navlinks = [
+// ! Datas de la navbar Burger
+const navlinksBurger = [
   {
     id: 1,
     path: "/accueil",
-    titre: "Accueil",
+    titre: "ACCUEIL",
   },
   {
     id: 2,
     path: "/cours",
-    titre: "Cours",
+    titre: "COURS",
   },
   {
     id: 3,
     path: "/planning",
-    titre: "Planning",
+    titre: "PLANNING",
   },
   {
     id: 4,
     path: "/tarifs",
-    titre: "Tarifs",
+    titre: "TARIFS",
   },
   {
     id: 5,
     path: "/contact",
-    titre: "Contact",
+    titre: "CONTACT",
   },
 ];
 
-export default navlinks;
+export default navlinksBurger;
