@@ -1,4 +1,7 @@
 import { useEffect } from "react";
+
+import BoutonReservation from "../layouts/BoutonReservation";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -59,9 +62,10 @@ const Homepage = () => {
                 tout en offrant une dimension artistique et ludique.
               </p>
             </div>
-            {/* Blobs */}
+
+            {/* BLOBS */}
             <div
-              className="absolute top-0 left-0 w-64 h-64 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-60 z-0"
+              className="absolute top-0 left-0 w-64 h-64 bg-green-100 rounded-full mix-blend-multiply filter blur-xl opacity-60 z-0"
               data-aos="fade-in"
             ></div>
             <div
@@ -77,15 +81,11 @@ const Homepage = () => {
           src="/assets/pics/Laureen_Cerceau_2_retouchée.jpg"
           alt="Présentation Aerial Pays Basque"
           className="max-w-[56rem] h-auto rounded-lg shadow-lg"
-          // data-aos="zoom-in"
+          data-aos="zoom-in"
         />
         <p className="mt-2 mb-12 italic">- Cerceau aérien -</p>
-        <div className="mt-2 mb-12 italic">
-          <a href="#" class="relative px-6 py-3 font-bold text-slate-800 group">
-            <span class="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-pink-200 rounded-lg group-hover:translate-x-0 group-hover:translate-y-0"></span>
-            <span class="absolute inset-0 w-full h-full border-4 border-slate-800 rounded-lg "></span>
-            <span class="relative">Réserver mon 1er cours</span>
-          </a>
+        <div data-aos="fade-in">
+          <BoutonReservation texte="Nos tarifs" />
         </div>
       </div>
     </div>

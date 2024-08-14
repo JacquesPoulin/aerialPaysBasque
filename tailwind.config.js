@@ -2,7 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        "spin-slow": "spin 1s linear",
+      },
+    },
     // colors: {
     //   "custom-footer-color": "#2d2e5c",
     // //   "custom-footer-color": "#604f6a",

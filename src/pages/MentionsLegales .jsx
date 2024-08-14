@@ -1,8 +1,12 @@
 // ! Composant gérant les mentions légales du site
+import React, { useEffect } from "react";
+import { currentYear } from "../utils/functions";
 
 const MentionsLegales = () => {
-  // ? Obtenir l'année actuelle dynamiquement
-  const currentYear = new Date().getFullYear();
+  useEffect(() => {
+    // Faire défiler la page vers le haut lorsque le composant est monté
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="bg-gray-100 py-10 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto bg-white p-8 rounded-lg shadow-md">
@@ -17,8 +21,8 @@ const MentionsLegales = () => {
           concernent. Vous pouvez exercer ce droit en adressant un e-mail à
           l'adresse électronique suivante :{" "}
           <a
-            href="mailto:contact@helloasso.org"
-            className="text-blue-800 hover:underline"
+            href="mailto:aerialpaysbasque@gmail.com"
+            className="text-blue-900 hover:underline animate-pulse"
             title="Envoyer un mail à l'association"
           >
             aerialpaysbasque@gmail.com
@@ -37,7 +41,7 @@ const MentionsLegales = () => {
           photographies, données, marques et tout autre élément contenu est
           sujet à une demande d'autorisation et pour un usage non commercial.
         </p>
-        <p className="text-slate-900 leading-relaxed mb-4">
+        <p className="text-pink-500 leading-relaxed mb-4">
           Aerial Pays Basque n'autorise qu'un usage strictement personnel des
           données, informations ou contenus auxquels vous accédez, limité à un
           enregistrement temporaire sur votre ordinateur aux fins d'affichage
@@ -66,6 +70,9 @@ const MentionsLegales = () => {
           &copy; {currentYear} Droits de reproduction et de diffusion réservés.
         </p>
       </div>
+      {/* BLOBS */}
+      {/* <div className="absolute top-20 right-2 w-52 h-52 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-60 z-0"></div>
+      <div className="absolute bottom-0 left-2 w-64 h-64 bg-pink-200 rounded-full mix-blend-multiply filter blur-xl opacity-60 z-0"></div> */}
     </div>
   );
 };

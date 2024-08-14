@@ -61,8 +61,8 @@ const Footer = () => {
           <div className="mb-8 md:mb-0 text-center md:text-left">
             <h3 className="text-lg font-semibold mb-4">MENTIONS LÉGALES</h3>
             <ul className="space-y-2">
-              <li>
-                <NavLink to="/mentions-legales" className="hover:text-gray-300">
+              <li title="Découvrir nos mentions légales">
+                <NavLink to="/mentions-legales" className="hover:text-pink-100">
                   Mentions légales
                 </NavLink>
               </li>
@@ -79,7 +79,7 @@ const Footer = () => {
                   href="https://www.google.com/maps?q=22+Avenue+Larochefoucauld,+64200+Biarritz,+France"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-white"
+                  className="text-gray-300 hover:text-pink-100"
                   title="Ouvrir avec Google Maps"
                 >
                   22 Avenue Larochefoucauld, 64200 Biarritz, France
@@ -88,7 +88,7 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => setShowModal(true)}
-                  className="text-gray-300 hover:text-white"
+                  className="text-gray-300 hover:text-pink-100"
                   title="Appeler ou Envoyer un message"
                 >
                   07 89 45 49 45
@@ -98,7 +98,7 @@ const Footer = () => {
               <li>
                 <a
                   href="mailto:aerialpaysbasque@gmail.com"
-                  className="text-gray-300 hover:text-white"
+                  className="text-gray-300 hover:text-pink-100"
                   title="Envoyer un mail"
                 >
                   aerialpaysbasque@gmail.com
@@ -117,7 +117,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 title="Découvrir notre facebook"
               >
-                <FaFacebookF className="w-6 h-6 hover:text-gray-300" />
+                <FaFacebookF className="w-6 h-6 hover:text-pink-300" />
               </a>
               <a
                 href="https://www.instagram.com/aerial_paysbasque?igsh=MTEzYnJmc2ViZGtiaQ=="
@@ -125,7 +125,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 title="Découvrir notre Instagram"
               >
-                <FaInstagram className="w-6 h-6 hover:text-gray-300" />
+                <FaInstagram className="w-6 h-6 hover:text-pink-300" />
               </a>
             </div>
           </div>

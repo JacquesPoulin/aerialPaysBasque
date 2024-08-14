@@ -18,7 +18,7 @@ const NavbarTitle = () => {
         alt=""
         className="rounded-full w-12 h-auto mr-6"
       /> */}
-      <h1 className="relative text-xl font-bold text-purple-900 tracking-widest">
+      <h1 className="relative text-xl font-bold text-purple-900 tracking-widest animate-spin-slow">
         <span className="relative z-10 flex">
           {letters.map((letter, index) => (
             <motion.span
@@ -67,7 +67,7 @@ const Navbar = () => {
                   <li key={id} className="relative group">
                     {titre === "Cours" ? (
                       <>
-                        <button className="text-slate-900 hover:text-purple-700 flex items-center">
+                        <button className="text-slate-900 hover:bg-pink-100 rounded-lg px-2 flex items-center">
                           Cours
                           <svg
                             className="w-4 h-4 inline ml-2"
@@ -91,7 +91,11 @@ const Navbar = () => {
                               key={path}
                               to={path}
                               onClick={handleLinkClick}
-                              className="block px-4 py-2 text-sm text-slate-900 hover:bg-purple-100"
+                              className={({ isActive }) =>
+                                `block px-4 py-2 text-sm hover:text-pink-400 ${
+                                  isActive ? "bg-pink-100" : "text-slate-900"
+                                }`
+                              }
                             >
                               {title}
                             </NavLink>
@@ -102,7 +106,11 @@ const Navbar = () => {
                       <NavLink
                         to={path}
                         onClick={handleLinkClick}
-                        className="text-slate-900 hover:bg-pink-100 rounded-xl p-2"
+                        className={({ isActive }) =>
+                          `text-slate-900 hover:bg-pink-100 rounded-lg px-2 ${
+                            isActive ? "bg-pink-200" : ""
+                          }`
+                        }
                       >
                         {titre}
                       </NavLink>
@@ -116,7 +124,7 @@ const Navbar = () => {
             <div className="md:hidden flex items-center">
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="text-slate-900 hover:bg-pink-100 rounded focus:outline-none"
+                className="text-slate-900 hover:bg-pink-100 p-1 rounded-lg focus:outline-none"
               >
                 <svg
                   className="w-6 h-6"
@@ -147,7 +155,7 @@ const Navbar = () => {
                 <>
                   <button
                     onClick={() => setIsCoursesOpen(!isCoursesOpen)}
-                    className="block w-full px-4 py-2 text-sm text-slate-900 hover:bg-pink-100 text-center"
+                    className="block w-full px-4 py-2 text-sm text-slate-900 hover:text-pink-400 text-center"
                   >
                     COURS
                     <svg
@@ -172,7 +180,7 @@ const Navbar = () => {
                           key={path}
                           to={path}
                           onClick={handleLinkClick}
-                          className="block px-4 py-2 text-sm text-slate-900 hover:bg-gray-100"
+                          className="block px-4 py-2 text-sm text-slate-900 hover:text-pink-400"
                         >
                           {title}
                         </Link>
@@ -184,7 +192,7 @@ const Navbar = () => {
                 <Link
                   to={path}
                   onClick={handleLinkClick}
-                  className="block px-4 py-2 text-sm text-slate-900-800 hover:bg-purple-100"
+                  className="block px-4 py-2 text-sm text-slate-900 hover:text-pink-400"
                 >
                   {titre}
                 </Link>
