@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 
+import { Link } from "react-router-dom";
+
 import BoutonReservation from "../layouts/BoutonReservation";
 
 import AOS from "aos";
@@ -77,14 +79,17 @@ const Homepage = () => {
       </div>
       {/* Section Image centrée */}
       <div className="flex flex-col gap-3 justify-center items-center bg-gray-100">
-        <img
-          src="/assets/pics/Laureen_Cerceau_2_retouchée.jpg"
-          alt="Présentation Aerial Pays Basque"
-          className="max-w-[56rem] h-auto rounded-lg shadow-lg"
-          data-aos="zoom-in"
-        />
-        <p className="mt-2 mb-12 italic">- Cerceau aérien -</p>
-        <div data-aos="fade-in">
+        <Link to="/galerie">
+          <img
+            src="/assets/pics/Laureen_Cerceau_2_retouchée.jpg"
+            className="max-w-[56rem] h-auto rounded-lg shadow-lg cursor-pointer"
+            alt="Présentation Aerial Pays Basque"
+            title="Voir la galerie"
+            data-aos="zoom-in"
+          />
+        </Link>
+        {/* <p className="mt-2 mb-12 italic">- Cerceau aérien -</p> */}
+        <div className="mt-10" data-aos="fade-in">
           <BoutonReservation texte="Nos tarifs" />
         </div>
       </div>

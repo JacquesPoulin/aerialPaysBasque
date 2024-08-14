@@ -4,7 +4,7 @@ const BoutonReservation = ({texte}) => {
   return (
     <div className="mt-2 mb-12 italic">
       <Link
-        to="/tarifs" // Utilise Link pour rediriger vers /tarifs
+        to="/tarifs" // Utilise Link pour rediriger vers "/tarifs"
         className="relative px-6 py-3 font-bold text-slate-800 group"
       >
         <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-pink-200 rounded-lg group-hover:translate-x-0 group-hover:translate-y-0"></span>
