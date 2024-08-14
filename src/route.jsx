@@ -38,8 +38,8 @@ const routesConfig = [
 
     // * Sous-Route : Tarifs*
     children: [
-      { path: "cerceauAerien", element: <Cerceau /> },
-      { path: "tissuAerien", element: <Tissu /> },
+      { path: "cerceau", element: <Cerceau /> },
+      { path: "tissu", element: <Tissu /> },
       { path: "pilates", element: <Pilates /> },
       { path: "enfants", element: <Enfant /> },
     ],

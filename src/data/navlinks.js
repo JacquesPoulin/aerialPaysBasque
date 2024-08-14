@@ -17,11 +17,16 @@ const navlinks = [
   },
   {
     id: 4,
+    path: "/galerie",
+    titre: "Galerie",
+  },
+  {
+    id: 5,
     path: "/tarifs",
     titre: "Tarifs",
   },
   {
-    id: 5,
+    id: 6,
     path: "/contact",
     titre: "Contact",
   },

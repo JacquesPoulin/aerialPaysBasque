@@ -44,7 +44,7 @@ const Homepage = () => {
           {/* QUI SOMMES-NOUS */}
           <div className="relative space-y-6 mt-10 mb-20">
             <div
-              className="bg-white shadow-xl p-8 rounded-xl relative z-20"
+              className="bg-white shadow-xl p-8 rounded-lg relative z-20"
               data-aos="fade-in"
             >
               <h3 className="text-2xl font-bold text-slate-900">
@@ -89,7 +89,7 @@ const Homepage = () => {
           />
         </Link>
         {/* <p className="mt-2 mb-12 italic">- Cerceau aérien -</p> */}
-        <div className="mt-10" data-aos="fade-in">
+        <div className="mt-10">
           <BoutonReservation texte="Nos tarifs" />
         </div>
       </div>

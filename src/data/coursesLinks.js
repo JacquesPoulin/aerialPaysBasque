@@ -1,11 +1,11 @@
 const coursesLinks = [
   {
-    path: "/cours/cerceauAerien",
+    path: "/cours/cerceau",
     title: "Cerceau Aérien",
   },
   {
-    path: "/cours/tissuAerien",
-    title: "Tissus Aériens",
+    path: "/cours/tissu",
+    title: "Tissu Aérien",
   },
   {
     path: "/cours/pilates",

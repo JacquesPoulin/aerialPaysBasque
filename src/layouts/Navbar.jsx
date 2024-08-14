@@ -18,7 +18,7 @@ const NavbarTitle = () => {
         alt=""
         className="rounded-full w-12 h-auto mr-6"
       /> */}
-      <h1 className="relative text-xl font-bold text-purple-900 tracking-widest animate-spin-slow">
+      <h1 className="relative text-xl font-bold text-slate-900 tracking-widest animate-spin-slow">
         <span className="relative z-10 flex">
           {letters.map((letter, index) => (
             <motion.span
@@ -67,7 +67,7 @@ const Navbar = () => {
                   <li key={id} className="relative group">
                     {titre === "Cours" ? (
                       <>
-                        <button className="text-slate-900 hover:bg-pink-100 rounded-lg px-2 flex items-center">
+                        <button className="text-slate-900 hover:bg-pink-100 rounded-lg flex items-center">
                           Cours
                           <svg
                             className="w-4 h-4 inline ml-2"

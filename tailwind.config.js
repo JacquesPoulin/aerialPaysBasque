@@ -6,6 +6,10 @@ export default {
       animation: {
         "spin-slow": "spin 1s linear",
       },
+      fontFamily: {
+        sans: ["Montserrat", "sans-serif"],
+        // sans: ["Roboto", "sans-serif"],
+      },
     },
     // colors: {
     //   "custom-footer-color": "#2d2e5c",
