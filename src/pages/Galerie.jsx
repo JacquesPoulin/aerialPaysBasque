@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 import imagesList from "../data/imagesList";
+import imagesNavList from "../data/imagesNavList";
 import ImageModal from "../layouts/ImageModal";
 
 const Galerie = () => {
@@ -16,7 +16,7 @@ const Galerie = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 800,
       once: true,
     });
   }, []);
@@ -48,84 +48,46 @@ const Galerie = () => {
               className="relative flex flex-wrap p-1 list-none rounded-lg bg-blue-gray-50/60"
               role="tablist"
             >
-              {/* Cerceau */}
-              <li className="z-30 flex-auto text-center">
-                <button
-                  className={`z-30 flex items-center justify-center w-full px-4 py-2 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-800 ${
-                    activeTab === "cerceau"
-                      ? "bg-gray-200 text-slate-800"
-                      : "bg-inherit"
-                  }`}
-                  onClick={() => setActiveTab("cerceau")}
-                >
-                  Cerceau
-                </button>
-              </li>
-
-              {/* Tissu */}
-              <li className="z-30 flex-auto text-center">
-                <button
-                  className={`z-30 flex items-center justify-center w-full px-4 py-2 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-800 ${
-                    activeTab === "tissu"
-                      ? "bg-gray-200 text-slate-800"
-                      : "bg-inherit"
-                  }`}
-                  onClick={() => setActiveTab("tissu")}
-                >
-                  Tissu
-                </button>
-              </li>
-
-              {/* Pilates */}
-              <li className="z-30 flex-auto text-center">
-                <button
-                  className={`z-30 flex items-center justify-center w-full px-4 py-2 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-800 ${
-                    activeTab === "pilates"
-                      ? "bg-gray-200 text-slate-800"
-                      : "bg-inherit"
-                  }`}
-                  onClick={() => setActiveTab("pilates")}
-                >
-                  Pilates
-                </button>
-              </li>
-
-              {/* Autres */}
-              <li className="z-30 flex-auto text-center">
-                <button
-                  className={`z-30 flex items-center justify-center w-full px-4 py-2 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-800 ${
-                    activeTab === "autres"
-                      ? "bg-gray-200 text-slate-800"
-                      : "bg-inherit"
-                  }`}
-                  onClick={() => setActiveTab("autres")}
-                >
-                  Autres
-                </button>
-              </li>
+              {imagesNavList.map(({ id, label }) => (
+                <li key={id} className="z-30 flex-auto text-center">
+                  <button
+                    className={`z-30 flex items-center justify-center w-full px-4 py-2 mb-0 transition-all ease-in-out border-0 rounded-lg cursor-pointer text-slate-800 ${
+                      activeTab === id
+                        ? "bg-gray-200 text-slate-800"
+                        : "bg-inherit"
+                    }`}
+                    onClick={() => setActiveTab(id)}
+                  >
+                    {label}
+                  </button>
+                </li>
+              ))}
             </ul>
 
             {/* Contenu des onglets */}
             <div className="pt-2">
-              {Object.keys(imagesList).map((tab) => (
+              {imagesNavList.map(({ id }) => (
                 <div
-                  key={tab}
+                  key={id}
                   className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-2 ${
-                    activeTab === tab ? "block" : "hidden"
+                    activeTab === id ? "block" : "hidden"
                   }`}
                 >
-                  {imagesList[tab].map((src, index) => (
+                  {imagesList[id].map((src, index) => (
                     <div
                       key={index}
                       className="relative flex justify-center transition-transform transform hover:scale-105"
                       onClick={() =>
-                        setSelectedImage({ src, alt: `image-${tab}-${index}` })
+                        setSelectedImage({
+                          src,
+                          alt: `image-${id}-${index}`,
+                        })
                       }
                     >
                       <img
                         className="w-full h-auto max-w-full rounded-lg object-cover cursor-pointer"
                         src={src}
-                        alt={`image-${tab}-${index}`}
+                        alt={`image-${id}-${index}`}
                       />
                     </div>
                   ))}

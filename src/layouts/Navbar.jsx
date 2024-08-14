@@ -13,11 +13,6 @@ const NavbarTitle = () => {
 
   return (
     <div className="flex items-center">
-      {/* <img
-        src="/assets/pics/logo.png"
-        alt=""
-        className="rounded-full w-12 h-auto mr-6"
-      /> */}
       <h1 className="relative text-xl font-bold text-slate-900 tracking-widest animate-spin-slow">
         <span className="relative z-10 flex">
           {letters.map((letter, index) => (

@@ -8,7 +8,7 @@ const ImageModal = ({ src, alt, onClose }) => {
 
   // Initialisation d'AOS
   useEffect(() => {
-    AOS.init({ duration: 1500, once: true });
+    AOS.init({ duration: 800, once: true });
   }, []);
 
   const handleClickOutside = (e) => {
@@ -22,7 +22,7 @@ const ImageModal = ({ src, alt, onClose }) => {
     <div
       className={`fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 modal-background ${
         isClosing ? "opacity-0" : "opacity-100"
-      } transition-opacity duration-300`}
+      } transition-opacity duration-100`}
       onClick={handleClickOutside}
     >
       <div
