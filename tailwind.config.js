@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       animation: {
-        "spin-slow": "spin 1s linear",
+        "spin-slow": "spin 2s linear",
+        "pulse-fast": "pulse 2s linear",
       },
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],

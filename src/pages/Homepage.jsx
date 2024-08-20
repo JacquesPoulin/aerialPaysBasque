@@ -20,7 +20,7 @@ const Homepage = () => {
       {/* Image de bandeau */}
       <div className="w-full h-[21rem] overflow-hidden">
         <img
-          src="/assets/pics/bandeau_intro.png"
+          src="/assets/pics/autres/bandeau_intro.png"
           alt="Bandeau de présentation"
           className="w-full h-full object-cover"
         />
@@ -30,12 +30,12 @@ const Homepage = () => {
       <div className="relative bg-gray-100 pt-16">
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h2
-            className="text-4xl font-extrabold text-slate-900 mb-10"
+            className="text-4xl font-extrabold text-indigo-950 mb-10 animate-pulse-fast"
             data-aos="zoom-in"
           >
             Bienvenue chez Aerial Pays Basque
           </h2>
-          <p className="text-lg text-slate-900 mb-10" data-aos="fade-in">
+          <p className="text-lg text-indigo-950 mb-10" data-aos="fade-in">
             Aerial Pays Basque est une association loi 1901 proposant des cours
             de cerceau aérien, de hamac aérien et de pilates, pour tout public
             (enfants à partir de 8 ans).
@@ -47,14 +47,14 @@ const Homepage = () => {
               className="bg-white shadow-xl p-8 rounded-lg relative z-20"
               data-aos="fade-in"
             >
-              <h3 className="text-2xl font-bold text-slate-900">
+              <h3 className="text-2xl font-bold text-indigo-950">
                 Qui sommes-nous ?
               </h3>
-              <p className="text-lg text-slate-900 mt-4" data-aos="zoom-in">
+              <p className="text-lg text-indigo-950 mt-4" data-aos="zoom-in">
                 Chez Aerial Pays Basque, nous croyons que le bien-être quotidien
                 passe par une pratique sportive régulière et épanouissante.
               </p>
-              <p className="text-lg text-slate-900 mt-4" data-aos="zoom-in">
+              <p className="text-lg text-indigo-950 mt-4" data-aos="zoom-in">
                 Nos cours, adaptés à tous les niveaux, vous permettront de vous{" "}
                 <span className="text-pink-500 animate-pulse">renforcer</span>,
                 de gagner en{" "}
@@ -67,7 +67,7 @@ const Homepage = () => {
 
             {/* BLOBS */}
             <div
-              className="absolute top-0 left-0 w-64 h-64 bg-green-100 rounded-full mix-blend-multiply filter blur-xl opacity-60 z-0"
+              className="absolute top-0 left-0 w-64 h-64 bg-indigo-200 rounded-full mix-blend-multiply filter blur-xl opacity-60 z-0"
               data-aos="fade-in"
             ></div>
             <div

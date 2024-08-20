@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { IoCall } from "react-icons/io5";
 
 import { currentYear } from "../utils/functions";
 
@@ -17,29 +18,42 @@ const ContactOptions = ({ onClose }) => {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50">
-      <div className="bg-gray-800 text-white rounded-md shadow-lg p-6 relative">
+      <div className="bg-indigo-950 text-slate-50 rounded-lg shadow-lg p-6 relative">
+        {/* CANCEL / ANNULER */}
         <button
           onClick={onClose}
-          className="absolute top-2 right-2 text-gray-400 hover:text-white"
+          className="absolute top-1 right-2 text-gray-400 text-3xl hover:text-white"
         >
           &times;
         </button>
-        <p className="mt-2 mb-4">Que souhaitez-vous faire ?</p>
+
+        {/* QUESTION */}
+        <p className="mt-4 mb-4">Que souhaitez-vous faire ?</p>
+
+        {/* APPEL */}
+
         <button
           onClick={() => handleOptionClick("call")}
-          className="block w-full text-left px-4 py-2 bg-blue-500 hover:bg-blue-700 rounded mb-2"
+          className="w-full flex justify-center items-center gap-2 text-center px-4 py-2 bg-pink-500 hover:bg-blue-700 rounded-lg mb-2"
         >
+          <IoCall />
           Appeler
         </button>
+
+        {/* SMS */}
         <button
           onClick={() => handleOptionClick("message")}
-          className="block w-full text-left px-4 py-2 bg-green-500 hover:bg-green-700 rounded mb-2"
+          className="w-full flex justify-center items-center gap-2 text-center px-4 py-2 bg-green-500 hover:bg-green-700 rounded-lg mb-2"
+          title="Nous envoyer un WhatsApp"
         >
+          <FaWhatsapp />
           Envoyer un message
         </button>
+
+        {/* CANCEL / ANNULER */}
         <button
           onClick={onClose}
-          className="block w-full text-left px-4 py-2 bg-gray-600 hover:bg-gray-800 rounded"
+          className="w-full flex justify-center items-center gap-2 text-center px-4 py-2 bg-gray-600 hover:bg-gray-800 rounded-lg"
         >
           Annuler
         </button>

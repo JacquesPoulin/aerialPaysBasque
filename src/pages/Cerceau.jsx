@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 import { Link } from "react-router-dom";
 
@@ -9,11 +9,23 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Cerceau = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Durée de l'animation
-      once: true, // Animation ne se déclenche qu'une seule fois
+      duration: 1000,
+      once: true,
     });
+
+    // Détecter si on est sur un écran mobile
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Mobile si l'écran est plus petit que 768px
+    };
+
+    handleResize(); // Appel initial pour définir l'état au chargement
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
@@ -32,7 +44,7 @@ const Cerceau = () => {
       {/* Contenu principal */}
       <div className="max-w-4xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <h2
-          className="text-4xl font-extrabold text-slate-900 text-center mb-8"
+          className="text-4xl font-extrabold text-indigo-950 text-center mb-8"
           data-aos="zoom-in"
         >
           Le Cerceau Aérien
@@ -42,13 +54,13 @@ const Cerceau = () => {
           className="bg-white shadow-xl p-8 rounded-lg relative z-20"
           data-aos="zoom-in"
         >
-          <p className="text-lg text-slate-900 leading-relaxed mb-2 text-justify">
+          <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
             Le cerceau aérien est une discipline circassienne (venant du cirque)
             qui implique l'exécution de figures acrobatiques sur un anneau en
             acier suspendu dans les airs.
           </p>
 
-          <p className="text-lg text-slate-900 leading-relaxed mb-2 text-justify">
+          <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
             Cette pratique permet de réaliser des performances spectaculaires
             alliant puissance, souplesse et élégance. En plus d'offrir un
             spectacle visuellement saisissant, le cerceau aérien est un
@@ -63,14 +75,14 @@ const Cerceau = () => {
             cardiovasculaire.
           </p>
 
-          <p className="text-lg text-slate-900 leading-relaxed mb-2 text-justify">
+          <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
             En plus des bénéfices physiques, le cerceau aérien offre des
             avantages significatifs pour le bien-être mental...la satisfaction
             qui accompagne la maîtrise d'une nouvelle figure sur le cerceau est
             extrêmement gratifiante.
           </p>
 
-          <p className="text-lg text-slate-900 leading-relaxed mb-2 text-justify">
+          <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
             Cette discipline aide également à renforcer l'
             <span className="text-pink-500 animate-pulse">attention</span> et la{" "}
             <span className="text-pink-500 animate-pulse">concentration</span>,
@@ -78,14 +90,20 @@ const Cerceau = () => {
             exécuter leurs mouvements en toute sécurité et avec précision.
           </p>
 
-          <p className="text-lg text-slate-900 leading-relaxed mb-2 text-justify">
+          <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
             Que vous soyez débutant ou confirmé, nos cours sont adaptés à tous
             les niveaux.
           </p>
         </div>
 
         {/* Bouton vers la galerie et tarifs */}
-        <div className="flex justify-center items-center gap-8 mt-20">
+        <div
+          className={`${
+            isMobile
+              ? "flex flex-col justify-center items-center gap-2 mt-12"
+              : "flex justify-center items-center gap-8 mt-20"
+          }`}
+        >
           <BoutonGalerie texte="Voir la Galerie" />
           <BoutonReservation texte="Réserver mon 1er cours" />
         </div>

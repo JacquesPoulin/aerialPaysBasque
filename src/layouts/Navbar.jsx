@@ -8,15 +8,26 @@ import coursesLinks from "../data/coursesLinks";
 
 import { motion } from "framer-motion";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const NavbarTitle = () => {
   const letters = "Aerial Pays Basque".split(" ");
 
   return (
-    <div className="flex items-center">
-      <h1 className="relative text-xl font-bold text-slate-900 tracking-widest animate-spin-slow">
+    <div className="flex justify-center items-center" data-aos="fade-right">
+      <Link to="/accueil">
+        <img
+          src="/assets/pics/logos/Logo_1.png"
+          alt="Logo association Aerial Pays Basque"
+          className="w-20 h-20 hidden lg:block"
+        />
+      </Link>
+      {/* <h1 className="relative text-xl font-bold text-indigo-950 tracking-widest animate-spin-slow"> */}
+      <h1 className="relative text-xl font-bold text-indigo-950 tracking-widest hover:animate-spin-slow">
         <span className="relative z-10 flex">
           {letters.map((letter, index) => (
-            <motion.span
+            <span
               key={index}
               className="inline-block"
               whileHover={{
@@ -31,7 +42,7 @@ const NavbarTitle = () => {
               }}
             >
               {letter}
-            </motion.span>
+            </span>
           ))}
         </span>
         <span className="absolute inset-0 bg-gradient-to-r from-indigo-300 to-purple-400 blur-lg opacity-50 animate-pulse"></span>
@@ -49,20 +60,20 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md">
-      <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="bg-pink-50 shadow-md">
+      <div className="w-full mx-auto px-4 sm:px-6">
         <div className="flex justify-between h-16">
           <NavbarTitle />
 
-          <div className="flex items-center">
+          <div className="flex items-center" data-aos="fade-left">
             {/* Menu for desktop */}
-            <div className="hidden md:flex space-x-8">
-              <ul className="flex gap-10 tracking-wide">
+            <div className="hidden lg:flex space-x-8">
+              <ul className="flex gap-6 tracking-wide">
                 {navlinks.map(({ id, path, titre }) => (
                   <li key={id} className="relative group">
                     {titre === "Cours" ? (
                       <>
-                        <button className="text-slate-900 hover:bg-pink-100 rounded-lg flex items-center">
+                        <button className="text-indigo-950 hover:text-pink-600 rounded-lg flex items-center">
                           Cours
                           <svg
                             className="w-4 h-4 inline ml-2"
@@ -80,21 +91,24 @@ const Navbar = () => {
                           </svg>
                         </button>
 
-                        <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                          {coursesLinks.map(({ path, title }) => (
-                            <NavLink
-                              key={path}
-                              to={path}
-                              onClick={handleLinkClick}
-                              className={({ isActive }) =>
-                                `block px-4 py-2 text-sm hover:text-pink-400 ${
-                                  isActive ? "bg-pink-100" : "text-slate-900"
-                                }`
-                              }
-                            >
-                              {title}
-                            </NavLink>
-                          ))}
+                        <div className="absolute left-0 mt-2 w-48 bg-pink-50 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          {coursesLinks &&
+                            coursesLinks.map(({ path, title }) => (
+                              <NavLink
+                                key={path}
+                                to={path}
+                                onClick={handleLinkClick}
+                                className={({ isActive }) =>
+                                  `block px-4 py-2 text-sm hover:text-indigo-500 ${
+                                    isActive
+                                      ? "text-pink-600"
+                                      : "text-indigo-950"
+                                  }`
+                                }
+                              >
+                                {title}
+                              </NavLink>
+                            ))}
                         </div>
                       </>
                     ) : (
@@ -102,8 +116,8 @@ const Navbar = () => {
                         to={path}
                         onClick={handleLinkClick}
                         className={({ isActive }) =>
-                          `text-slate-900 hover:bg-pink-100 rounded-lg px-2 ${
-                            isActive ? "bg-pink-200" : ""
+                          `text-indigo-950 hover:text-pink-600 rounded-lg px-2 ${
+                            isActive ? "text-pink-600" : ""
                           }`
                         }
                       >
@@ -116,10 +130,10 @@ const Navbar = () => {
             </div>
 
             {/* Menu burger for mobile */}
-            <div className="md:hidden flex items-center">
+            <div className="lg:hidden flex items-center">
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="text-slate-900 hover:bg-pink-100 p-1 rounded-lg focus:outline-none"
+                className="text-indigo-950 hover:text-pink-600 p-1 rounded-lg focus:outline-none"
               >
                 <svg
                   className="w-6 h-6"
@@ -143,14 +157,14 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden mt-4 pb-5">
+        <div className="lg:hidden mt-4 pb-5">
           {navlinksBurger.map(({ id, path, titre }) => (
             <div key={id} className="relative flex flex-col items-center">
               {titre === "COURS" ? (
                 <>
                   <button
                     onClick={() => setIsCoursesOpen(!isCoursesOpen)}
-                    className="block w-full px-4 py-2 text-sm text-slate-900 hover:text-pink-400 text-center"
+                    className="block w-full px-4 py-2 text-sm text-indigo-950 hover:text-pink-600 text-center"
                   >
                     COURS
                     <svg
@@ -175,7 +189,7 @@ const Navbar = () => {
                           key={path}
                           to={path}
                           onClick={handleLinkClick}
-                          className="block px-4 py-2 text-sm text-slate-900 hover:text-pink-400"
+                          className="block px-4 py-2 text-sm text-indigo-950 hover:text-pink-600"
                         >
                           {title}
                         </Link>
@@ -187,7 +201,7 @@ const Navbar = () => {
                 <Link
                   to={path}
                   onClick={handleLinkClick}
-                  className="block px-4 py-2 text-sm text-slate-900 hover:text-pink-400"
+                  className="block px-4 py-2 text-sm text-indigo-950 hover:text-pink-600"
                 >
                   {titre}
                 </Link>
