@@ -6,10 +6,7 @@ import navlinksBurger from "../data/navlinksBurger";
 
 import coursesLinks from "../data/coursesLinks";
 
-import { motion } from "framer-motion";
-
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import { motion } from "framer-motion";
 
 const NavbarTitle = () => {
   const letters = "Aerial Pays Basque".split(" ");
@@ -60,7 +57,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-pink-50 shadow-md">
+    <nav className="shadow-md">
       <div className="w-full mx-auto px-4 sm:px-6">
         <div className="flex justify-between h-16">
           <NavbarTitle />
@@ -91,7 +88,7 @@ const Navbar = () => {
                           </svg>
                         </button>
 
-                        <div className="absolute left-0 mt-2 w-48 bg-pink-50 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                           {coursesLinks &&
                             coursesLinks.map(({ path, title }) => (
                               <NavLink

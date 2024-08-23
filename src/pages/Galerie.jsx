@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import imagesList from "../data/imagesList";
 import imagesNavList from "../data/imagesNavList";
 import ImageModal from "../layouts/ImageModal";
+import { scrollToTop } from "../utils/functions";
 
 import { FaArrowCircleUp } from "react-icons/fa";
 
@@ -14,7 +15,7 @@ const Galerie = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    scrollToTop();
   }, []);
 
   useEffect(() => {
@@ -33,13 +34,6 @@ const Galerie = () => {
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth", // Pour un défilement en douceur
-    });
-  };
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
@@ -142,12 +136,12 @@ const Galerie = () => {
         </div>
 
         {/* Bouton pour remonter en haut */}
-        <div
+        {/* <div
           className="flex justify-center items-center mt-10 cursor-pointer"
           onClick={scrollToTop} // Ajout de l'événement onClick
         >
           <FaArrowCircleUp size={20} color="#1e1b4b" />
-        </div>
+        </div> */}
       </div>
 
       {/* Modale ouverture de l'image */}

@@ -4,12 +4,17 @@ import { Link } from "react-router-dom";
 
 import BoutonGalerie from "../layouts/BoutonGalerie";
 import BoutonReservation from "../layouts/BoutonReservation";
+import { scrollToTop } from "../utils/functions";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Cerceau = () => {
   const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    scrollToTop();
+  }, []);
 
   useEffect(() => {
     AOS.init({
@@ -34,7 +39,7 @@ const Cerceau = () => {
       <div className="w-full h-[21rem] overflow-hidden">
         <Link to="/galerie">
           <img
-            src="/assets/pics/Laureen_Cerceau_6.jpg"
+            src="/assets/pics/cerceau/nature/cerceau_nature_2.jpg"
             alt="Cerceau Aérien"
             className="w-full h-full object-cover"
           />

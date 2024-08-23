@@ -29,7 +29,7 @@ const Planning = () => {
       {/* Bandeau de présentation */}
       <div className="w-full h-[20rem] overflow-hidden">
         <img
-          src="/assets/pics/bandeau_intro.png" // Remplace avec l'image appropriée
+          src="/assets/pics/autres/bandeau_intro.png" // Remplace avec l'image appropriée
           alt="Bandeau de Planning"
           className="w-full h-full object-cover"
         />
@@ -60,7 +60,8 @@ const Planning = () => {
         {/* Image du planning */}
         <div className="text-center mb-12">
           <img
-            src="https://lenvoleepoledancestudio.fr/wp-content/uploads/2024/05/Planning-2024-2025_site_Plan-de-travail-1.png" // TODO : Remplacer avec l'image appropriée
+            // src="https://lenvoleepoledancestudio.fr/wp-content/uploads/2024/05/Planning-2024-2025_site_Plan-de-travail-1.png" // TODO : Remplacer avec l'image appropriée
+            src="../../public/assets/pics/autres/planning_4.jpg" // TODO : Remplacer avec l'image appropriée
             alt="Planning 2024-2025"
             className="max-w-full h-auto rounded-lg shadow-lg"
           />
