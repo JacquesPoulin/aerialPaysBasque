@@ -58,7 +58,7 @@ const MentionsLegales = () => {
           photographies, données, marques et tout autre élément contenu est
           sujet à une demande d'autorisation et pour un usage non commercial.
         </p>
-        <p className="text-pink-500 leading-relaxed mb-4">
+        <p className="text-pink-500 leading-relaxed mb-4 animate-pulse">
           Aerial Pays Basque n'autorise qu'un usage strictement personnel des
           données, informations ou contenus auxquels vous accédez, limité à un
           enregistrement temporaire sur votre ordinateur aux fins d'affichage

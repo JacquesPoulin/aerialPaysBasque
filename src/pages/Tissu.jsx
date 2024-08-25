@@ -3,12 +3,17 @@ import { Link } from "react-router-dom";
 
 import BoutonGalerie from "../layouts/BoutonGalerie";
 import BoutonReservation from "../layouts/BoutonReservation";
+import { scrollToTop } from "../utils/functions";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Tissu = () => {
   const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    scrollToTop();
+  }, []);
 
   useEffect(() => {
     AOS.init({
@@ -33,8 +38,8 @@ const Tissu = () => {
       <div className="w-full h-[21rem] overflow-hidden">
         <Link to="/galerie">
           <img
-            src="/assets/pics/Laureen_Cerceau_9.jpg"
-            alt="Cerceau Aérien"
+            src="/assets/pics/cerceau/nature/cerceau_nature_1.jpg"
+            alt="Tissu aérien"
             className="w-full h-full object-cover"
           />
         </Link>
@@ -53,7 +58,7 @@ const Tissu = () => {
           className="bg-white shadow-xl p-8 rounded-lg relative z-20"
           data-aos="zoom-in"
         >
-          <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
+          <p className="text-lg text-indigo-950 first-letter:text-xl first-letter:font-bold first-letter:ml-4 leading-relaxed mb-2 text-justify">
             Le tissu aérien, à la base une discipline provenant du cirque, est
             devenu un véritable outil de sport et fitness. Si vous souhaitez
             intégrer des acrobaties impressionnantes dans vos routines sportives
@@ -71,20 +76,24 @@ const Tissu = () => {
           <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
             Aussi appelé contorsion aérienne, ruban aérien ou simplement tissu,
             cet art allie l&apos;
-            <span className="text-pink-500 animate-pulse">élégance</span> de la
-            danse, la <span className="text-pink-500 animate-pulse">force</span>{" "}
-            des mouvements acrobatiques, et la magie des numéros aériens. Elle
-            permet également d&apos;exprimer une grande{" "}
-            <span className="text-pink-500 animate-pulse">créativité</span> et
-            d'explorer le mouvement d'une manière{" "}
-            <span className="text-pink-500 animate-pulse"> unique</span>.
+            <span className="text-pink-500 ">élégance</span> de la danse, la{" "}
+            <span className="text-pink-500 ">force</span> des mouvements
+            acrobatiques, et la magie des numéros aériens. Elle permet également
+            d&apos;exprimer une grande{" "}
+            <span className="text-pink-500 ">créativité</span> et d'explorer le
+            mouvement d'une manière{" "}
+            <span className="text-pink-500 "> unique</span>.
           </p>
 
           <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
-            Nous savons que les débuts peuvent sembler un peu intimidants. Mais
-            rassurez-vous, nous sommes là pour vous guider ! Avec un encadrement
-            adapté et une touche de persévérance, vous serez en mesure de vous
-            envoler en un rien de temps.
+            Je sais que les débuts peuvent sembler un peu intimidants. Mais
+            rassures-toi, je serai là pour te guider !{" "}
+          </p>
+          <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-center">
+            <b>
+              Grâce à un encadrement adapté et une touche de persévérance, tu
+              seras en mesure de t'envoler en un rien de temps.
+            </b>
           </p>
         </div>
 

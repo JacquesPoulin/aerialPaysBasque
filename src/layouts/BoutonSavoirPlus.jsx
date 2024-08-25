@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const BoutonSavoirPlus = ({ texte }) => {
   return (
-    <div className="mt-2 mb-12 italic">
+    <div className="mt-2 mb-12 italic animate-pulse">
       <Link
         to="/cours/cerceau"
         className="relative px-6 py-3 font-bold text-indigo-950 group"

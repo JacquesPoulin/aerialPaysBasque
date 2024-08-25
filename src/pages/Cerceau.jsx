@@ -40,7 +40,7 @@ const Cerceau = () => {
         <Link to="/galerie">
           <img
             src="/assets/pics/cerceau/nature/cerceau_nature_2.jpg"
-            alt="Cerceau Aérien"
+            alt="Cerceau aérien"
             className="w-full h-full object-cover"
           />
         </Link>
