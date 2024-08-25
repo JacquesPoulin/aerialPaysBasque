@@ -2,13 +2,14 @@
 import React, { useEffect } from "react";
 import { currentYear } from "../utils/functions";
 
+import { scrollToTop } from "../utils/functions";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const MentionsLegales = () => {
   useEffect(() => {
-    // ? Faire défiler la page vers le haut lorsque le composant est monté
-    window.scrollTo(0, 0);
+    scrollToTop();
   }, []);
 
   useEffect(() => {

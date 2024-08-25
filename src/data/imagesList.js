@@ -15,9 +15,15 @@ const imagesList = {
     "/assets/pics/cerceau/cerceau_7.jpg",
     "/assets/pics/cerceau/cerceau_8.jpg",
   ],
-  tissu: ["/assets/pics/Laureen_Cerceau_9.jpg"],
-  pilates: ["/assets/pics/Laureen_2.jpg"],
-  autres: ["/assets/pics/Laureen_4.jpg", "/assets/pics/Laureen_6.jpg"],
+  tissu: ["/assets/pics/pilates/Lauree.jpg"],
+  pilates: [
+    "/assets/pics/pilates/laureen_2.jpg",
+    "/assets/pics/pilates/laureen_4.jpg",
+    "/assets/pics/pilates/relaxation_1.jpg",
+    "/assets/pics/pilates/relaxation_2.jpg",
+    "/assets/pics/pilates/relaxation_3.jpg",
+  ],
+  autres: ["/assets/pics/.jpg", "/assets/pics/.jpg"],
 };
 
 export default imagesList;

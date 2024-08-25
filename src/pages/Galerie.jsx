@@ -40,8 +40,8 @@ const Galerie = () => {
       {/* Bandeau de présentation */}
       <div className="w-full h-[20rem] overflow-hidden">
         <img
-          src="/assets/pics/bandeau_intro.png"
-          alt="Bandeau de Planning"
+          src="/assets/pics/autres/bandeau_intro.png"
+          alt="Bandeau galerie"
           className="w-full h-full object-cover"
         />
       </div>

@@ -35,7 +35,10 @@ const Homepage = () => {
           >
             Bienvenue chez Aerial Pays Basque
           </h2> */}
-          <p className="text-2xl text-indigo-950 mb-10" data-aos="fade-in">
+          <p
+            className="text-xl font-bold text-indigo-950  tracking-wide mb-10"
+            data-aos="fade-in"
+          >
             Aerial Pays Basque est une association loi 1901 proposant des cours
             de cerceau aérien, de tissu aérien et de pilates, pour tout public.
             {/* (enfants à partir de 8 ans). */}

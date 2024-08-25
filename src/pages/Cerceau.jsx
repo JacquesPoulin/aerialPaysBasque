@@ -59,45 +59,90 @@ const Cerceau = () => {
           className="bg-white shadow-xl p-8 rounded-lg relative z-20"
           data-aos="zoom-in"
         >
-          <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
+          {/* <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
             Le cerceau aérien est une discipline circassienne (venant du cirque)
             qui implique l'exécution de figures acrobatiques sur un anneau en
             acier suspendu dans les airs.
+          </p> */}
+          <p className="text-lg text-indigo-950 first-letter:text-xl first-letter:font-bold first-letter:ml-4 leading-relaxed mb-2 text-justify">
+            Le cerceau aérien est une discipline issue du cirque. Il prend
+            naissance au 19<sup>e</sup> siècle, cousin éloigné du trapèze. Connu
+            également sous le nom de cercle aérien, c'est un tube d'acier de
+            forme circulaire, pouvant être suspendu par un ou deux points
+            d'accroche.
           </p>
 
           <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
-            Cette pratique permet de réaliser des performances spectaculaires
-            alliant puissance, souplesse et élégance. En plus d'offrir un
-            spectacle visuellement saisissant, le cerceau aérien est un
-            excellent exercice pour{" "}
-            <span className="text-pink-500 animate-pulse">
-              renforcer le haut du corps
-            </span>
-            , améliorer la{" "}
-            <span className="text-pink-500 animate-pulse">flexibilité </span>et
+            Largement popularisé par le "Cirque du Soleil", notamment lors de la
+            tournée Varekai en 2003, on le retrouve aujourd'hui dans de
+            nombreuses compétitions.
+          </p>
+
+          <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
+            Cette pratique permet de réaliser des performances alliant
+            puissance, souplesse et élégance. En plus d'offrir un spectacle
+            visuellement saisissant, le cerceau aérien est un excellent exercice
+            pour{" "}
+            <span className="text-pink-500 ">renforcer le haut du corps</span>,
+            améliorer la <span className="text-pink-500 ">flexibilité </span>et
             augmenter l'
-            <span className="text-pink-500 animate-pulse">endurance</span>{" "}
-            cardiovasculaire.
+            <span className="text-pink-500 ">endurance</span> cardiovasculaire.
           </p>
 
           <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
             En plus des bénéfices physiques, le cerceau aérien offre des
-            avantages significatifs pour le bien-être mental...la satisfaction
-            qui accompagne la maîtrise d'une nouvelle figure sur le cerceau est
-            extrêmement gratifiante.
+            avantages significatifs pour le{" "}
+            <span className="text-pink-500 ">bien-être mental</span>
+            ...la satisfaction qui accompagne la maîtrise d'une nouvelle figure
+            sur le cerceau est extrêmement gratifiante.
           </p>
 
           <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
             Cette discipline aide également à renforcer l'
-            <span className="text-pink-500 animate-pulse">attention</span> et la{" "}
-            <span className="text-pink-500 animate-pulse">concentration</span>,
-            car on doit être pleinement engagé dans l'instant présent pour
-            exécuter leurs mouvements en toute sécurité et avec précision.
+            <span className="text-pink-500 ">attention</span> et la{" "}
+            <span className="text-pink-500 ">concentration</span>, car on doit
+            être pleinement engagé dans l'instant présent pour exécuter les
+            mouvements en toute sécurité et avec précision.
           </p>
 
           <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
-            Que vous soyez débutant ou confirmé, nos cours sont adaptés à tous
-            les niveaux.
+            Que vous soyez débutant ou confirmé, nos cours sont adaptés à{" "}
+            <b>tous les niveaux</b> et se dérouleront en petit groupe. Les cours
+            de cerceau ont lieu le <b>vendredi à 18h30</b> à la{" "}
+            <a
+              href="https://www.google.com/maps?q=22+Avenue+Benjamin+Gomez,+64100+Bayonne,+France"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-indigo-500 hover:underline"
+              title="Ouvrir avec Google Maps"
+            >
+              <b>Salle Talia Danses du Monde</b>
+            </a>
+            .
+          </p>
+
+          <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
+            Ils durent une heure et sont composés d'un échauffement ciblé, d'un
+            corps de séance et d'étirements.
+          </p>
+
+          <p className="text-lg text-indigo-950 text-justify leading-relaxed mb-3">
+            Durant ces cours, tu apprendras :
+            <ul style={{ marginLeft: "1rem" }}>
+              <li>&gt; des mouvements techniques,</li>
+              <li>&gt; des mouvements de transitions,</li>
+              <li>&gt; les astuces pour gagner en fluidité,</li>
+              <li>
+                &gt; à travailler ta musicalité et à trouver ta personnalité
+                aérienne 🫶🏼.
+              </li>
+            </ul>
+          </p>
+          <p className="text-xl text-center text-indigo-950 leading-relaxed mb-2">
+            <b>
+              Si tu n'en a jamais fait, pas de panique... on a tous commencé un
+              jour 😄 !
+            </b>
           </p>
         </div>
 

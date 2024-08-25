@@ -2,10 +2,16 @@ import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import { scrollToTop } from "../utils/functions";
+
 import { FaMapMarkedAlt } from "react-icons/fa";
 
 const Planning = () => {
   const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    scrollToTop();
+  }, []);
 
   useEffect(() => {
     AOS.init({
@@ -85,12 +91,12 @@ const Planning = () => {
                 Salle "Talia Danses du monde"
               </p>
               <p className="text-sm text-slate-700 mb-2">
-                22 avenue Benjamin Gomez, 64100 Bayonne
+                22 avenue Benjamin Gomez, 64100 <b>Bayonne</b>
               </p>
               <div className="flex justify-center items-center gap-4">
                 <FaMapMarkedAlt className="text-pink-500 hover:underline" />
                 <a
-                  href="https://www.google.com/maps?q=22+Avenue+Benjamin+Gomez,+64100+Bayonne,+France" // TODO : Remplacer avec le lien approprié
+                  href="https://www.google.com/maps?q=22+Avenue+Benjamin+Gomez,+64100+Bayonne,+France"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-pink-500 hover:underline"
@@ -107,12 +113,12 @@ const Planning = () => {
                 Salle "Les Turbulents"
               </p>
               <p className="text-sm text-slate-700 mb-2">
-                34 avenue de Tamames, 64200 Biarritz
+                34 avenue de Tamames, 64200 <b>Biarritz</b>
               </p>
               <div className="flex justify-center items-center gap-4">
                 <FaMapMarkedAlt className="text-pink-500 hover:underline" />
                 <a
-                  href="https://www.google.com/maps?q=34+Avenue+De+Tamames,+64200+Biarritz,+France" // TODO : Remplacer avec le lien approprié
+                  href="https://www.google.com/maps?q=34+Avenue+De+Tamames,+64200+Biarritz,+France"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-pink-500 hover:underline"
