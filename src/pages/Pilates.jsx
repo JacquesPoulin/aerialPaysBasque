@@ -3,12 +3,17 @@ import { Link } from "react-router-dom";
 
 import BoutonGalerie from "../layouts/BoutonGalerie";
 import BoutonReservation from "../layouts/BoutonReservation";
+import { scrollToTop } from "../utils/functions";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Pilates = () => {
   const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    scrollToTop();
+  }, []);
 
   useEffect(() => {
     AOS.init({
@@ -33,9 +38,9 @@ const Pilates = () => {
       <div className="w-full h-[21rem] overflow-hidden">
         <Link to="/galerie">
           <img
-            src="/assets/pics/Laureen_4.jpg"
+            src="/assets/pics/pilates/laureen_4.jpg"
             alt="Pilates"
-            className="w-full h-full object-cover object-center-bottom"
+            className="w-full h-full object-cover"
           />
         </Link>
       </div>
@@ -50,10 +55,10 @@ const Pilates = () => {
         </h2>
 
         <div
-          className="bg-white shadow-xl p-8 rounded-lg relative z-20"
+          className="bg-white shadow-xl p-8 rounded-lg relative z-20 tracking-wide"
           data-aos="zoom-in"
         >
-          <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
+          <p className="text-lg text-indigo-950 first-letter:text-xl first-letter:font-bold first-letter:ml-4 leading-relaxed mb-2 text-justify">
             Le Pilates est une méthode de conditionnement physique qui se
             concentre sur le renforcement du "centre" du corps, améliorant ainsi
             la posture, la stabilité et la souplesse.
@@ -62,10 +67,10 @@ const Pilates = () => {
           <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
             En travaillant sur des mouvements contrôlés et précis, le Pilates
             permet de développer la{" "}
-            <span className="text-pink-500 animate-pulse">force</span>, la{" "}
-            <span className="text-pink-500 animate-pulse">souplesse</span>, et
-            l' <span className="text-pink-500 animate-pulse">équilibre</span>{" "}
-            tout en favorisant une meilleure prise de conscience corporelle.
+            <span className="text-pink-500 ">force</span>, la{" "}
+            <span className="text-pink-500 ">souplesse</span>, et l'{" "}
+            <span className="text-pink-500 ">équilibre</span> tout en favorisant
+            une meilleure prise de conscience corporelle.
           </p>
 
           <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
@@ -79,9 +84,11 @@ const Pilates = () => {
           </p>
 
           <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
-            Que vous soyez débutant ou pratiquant confirmé, nos cours de Pilates
-            vous aideront à atteindre vos objectifs de fitness tout en prenant
-            soin de votre bien-être général.
+            <b>
+              Que vous soyez débutant ou pratiquant confirmé, nos cours de
+              Pilates vous aideront à atteindre vos objectifs de fitness tout en
+              prenant soin de votre bien-être général.
+            </b>
           </p>
         </div>
 

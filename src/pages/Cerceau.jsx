@@ -56,7 +56,7 @@ const Cerceau = () => {
         </h2>
 
         <div
-          className="bg-white shadow-xl p-8 rounded-lg relative z-20"
+          className="bg-white shadow-xl p-8 rounded-lg relative z-20 tracking-wide"
           data-aos="zoom-in"
         >
           {/* <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">

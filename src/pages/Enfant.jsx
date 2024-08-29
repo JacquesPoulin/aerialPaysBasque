@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import BoutonGalerie from "../layouts/BoutonGalerie";
 import BoutonReservation from "../layouts/BoutonReservation";
 
+import { FaWhatsapp } from "react-icons/fa";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -33,7 +35,7 @@ const Enfant = () => {
       <div className="w-full h-[21rem] overflow-hidden">
         <Link to="/galerie">
           <img
-            src="/assets/pics/Laureen_Cerceau_6.jpg"
+            src="/assets/pics/enfant/enfant.jpg"
             alt="Enfants faisant du cerceau aérien"
             className="w-full h-full object-cover"
           />
@@ -46,55 +48,70 @@ const Enfant = () => {
           className="text-4xl font-extrabold text-indigo-950 text-center mb-8"
           data-aos="zoom-in"
         >
-          Activités Aériennes pour Enfants
+          Les Ptis Zacrobates
         </h2>
 
         <div
-          className="bg-white shadow-xl p-8 rounded-lg relative z-20"
-          data-aos="fade-in"
+          className="bg-white shadow-xl p-8 rounded-lg relative z-20 tracking-wide"
+          data-aos="zoom-in"
         >
-          <p className="text-lg text-indigo-950 leading-relaxed mb-4 text-justify">
+          <p className="text-lg text-indigo-950 first-letter:text-xl first-letter:font-bold first-letter:ml-4 leading-relaxed mb-2 text-justify">
             Nous accueillons les enfants avec enthousiasme et offrons des
-            activités aériennes adaptées à leur âge et à leur niveau. Que ce
-            soit le <span className="text-pink-500 animate-pulse">cerceau</span>{" "}
-            ou le <span className="text-pink-500 animate-pulse">tissu</span>{" "}
-            aérien, ces disciplines offrent des opportunités exceptionnelles
-            pour les plus jeunes.
+            activités aériennes adaptées à leur âge et à leur niveau{" "}
+            <i> (de 8 à 15 ans).</i>
           </p>
 
           <p className="text-lg text-indigo-950 leading-relaxed mb-4 text-justify">
-            Le cerceau aérien et le tissu aérien sont non seulement amusants,
-            mais ils contribuent également à développer des compétences
-            physiques essentielles telles que la{" "}
-            <span className="text-pink-500 animate-pulse">force</span>, la{" "}
-            <span className="text-pink-500 animate-pulse">souplesse</span> et la{" "}
-            <span className="text-pink-500 animate-pulse">coordination</span>.
-            Les enfants peuvent ainsi améliorer leur motricité tout en
-            s'amusant.
+            Ils développeront ainsi : <br />
+            <ul className="ml-4">
+              <li>
+                - <span className="text-pink-500 ">coordination</span>,
+              </li>
+              <li>
+                - <span className="text-pink-500 ">souplesse</span>
+              </li>
+              <li>
+                - <span className="text-pink-500 ">équilibre</span>
+              </li>
+              <li>
+                - <span className="text-pink-500 ">agilité</span>
+              </li>
+              <li>
+                - <span className="text-pink-500 ">créativité</span>
+              </li>
+            </ul>
           </p>
 
           <p className="text-lg text-indigo-950 leading-relaxed mb-4 text-justify">
-            En plus des avantages physiques, ces activités aériennes favorisent
-            la{" "}
-            <span className="text-pink-500 animate-pulse">
-              confiance en soi
-            </span>{" "}
-            et le{" "}
-            <span className="text-pink-500 animate-pulse">
-              travail en équipe
-            </span>
-            . Travailler en hauteur dans un environnement sécurisé aide les
-            enfants à surmonter leurs peurs et à se dépasser dans un cadre
-            ludique et stimulant.
+            Les cours enfants durent <b>45 minutes</b> et sont composés d'un
+            réveil musculaire, d'un corps de séance et d'un retour au calme. Nos
+            cours sont conçus pour être à la fois sûrs, éducatifs, amusants, et
+            enrichissants !
           </p>
 
-          <p className="text-xl text-indigo-950 leading-relaxed mb-4 text-justify">
-            Nos cours sont conçus pour être à la fois sûrs, éducatifs, amusants,
-            et enrichissants !
+          <p className="text-lg text-indigo-950 leading-relaxed mb-4 text-justify">
+            Pour leur bien-être et afin qu'ils puissent libérer leur plein
+            potentiel créatif, les parents sont priés de les attendre à
+            l'extérieur de la salle.
           </p>
           <p className="text-lg text-indigo-950 leading-relaxed mb-4 text-justify">
-            Des jeux et des exercices adaptés garantissent que chaque enfant
-            puisse progresser à son rythme tout en s'amusant.
+            Un groupe Whatsapp sera créer chaque année, et des vidéos prises
+            pendant les cours y seront régulièrement postées afin que vous
+            puissiez suivre leur évolution.
+          </p>
+
+          <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
+            Les cours se dérouleront le <b>samedi à 9h45</b> à la{" "}
+            <a
+              href="https://www.google.com/maps?q=22+Avenue+Benjamin+Gomez,+64100+Bayonne,+France"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-indigo-500 hover:underline"
+              title="Ouvrir avec Google Maps"
+            >
+              <b>Salle Talia Danses du Monde</b>
+            </a>
+            .
           </p>
 
           <p className="text-lg text-indigo-950 leading-relaxed mb-4 text-justify">
