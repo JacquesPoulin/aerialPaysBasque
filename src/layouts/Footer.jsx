@@ -2,6 +2,8 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import { FaFacebookF, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+
 import { IoCall } from "react-icons/io5";
 
 import { currentYear } from "../utils/functions";
@@ -31,7 +33,6 @@ const ContactOptions = ({ onClose }) => {
         <p className="mt-4 mb-4">Que souhaitez-vous faire ?</p>
 
         {/* APPEL */}
-
         <button
           onClick={() => handleOptionClick("call")}
           className="w-full flex justify-center items-center gap-2 text-center px-4 py-2 bg-pink-500 hover:bg-blue-700 rounded-lg mb-2"
@@ -121,7 +122,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Section Réseaux Sociaux */}
+          {/* Section Réseaux Sociaux + mail */}
           <div className="mb-8 md:mb-0 text-center md:text-left">
             <h3 className="text-lg font-semibold mb-4">SUIVEZ-NOUS</h3>
             <div className="flex justify-center md:justify-center space-x-4">
@@ -129,7 +130,7 @@ const Footer = () => {
                 href="https://www.facebook.com/profile.php?id=61563450955831"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="Découvrir notre facebook"
+                title="Découvrir mon facebook"
               >
                 <FaFacebookF className="w-6 h-6 hover:text-pink-300" />
               </a>
@@ -137,9 +138,18 @@ const Footer = () => {
                 href="https://www.instagram.com/aerial_paysbasque?igsh=MTEzYnJmc2ViZGtiaQ=="
                 target="_blank"
                 rel="noopener noreferrer"
-                title="Découvrir notre Instagram"
+                title="Découvrir mon Instagram"
               >
-                <FaInstagram className="w-6 h-6 hover:text-pink-300" />
+                <FaInstagram className="w-6 h-7 hover:text-pink-300" />
+              </a>
+
+              <a
+                href="mailto:aerialpaysbasque@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Envoyer un mail"
+              >
+                <HiOutlineMail className="w-7 h-7 hover:text-pink-300" />
               </a>
             </div>
           </div>

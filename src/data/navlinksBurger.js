@@ -17,11 +17,16 @@ const navlinksBurger = [
   },
   {
     id: 4,
+    path: "/galerie",
+    titre: "GALERIE",
+  },
+  {
+    id: 5,
     path: "/tarifs",
     titre: "TARIFS",
   },
   {
-    id: 5,
+    id: 6,
     path: "/contact",
     titre: "CONTACT",
   },

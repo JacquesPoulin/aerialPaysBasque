@@ -108,7 +108,10 @@ const Cerceau = () => {
           <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
             Que vous soyez débutant ou confirmé, nos cours sont adaptés à{" "}
             <b>tous les niveaux</b> et se dérouleront en petit groupe. Les cours
-            de cerceau ont lieu le <b>vendredi à 18h30</b> à la{" "}
+            de cerceau ont lieu le :
+          </p>
+          <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-center">
+            <b>Vendredi à 18h30</b> à la{" "}
             <a
               href="https://www.google.com/maps?q=22+Avenue+Benjamin+Gomez,+64100+Bayonne,+France"
               target="_blank"
@@ -120,7 +123,6 @@ const Cerceau = () => {
             </a>
             .
           </p>
-
           <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
             Ils durent une heure et sont composés d'un échauffement ciblé, d'un
             corps de séance et d'étirements.
@@ -132,13 +134,11 @@ const Cerceau = () => {
               <li>&gt; des mouvements techniques,</li>
               <li>&gt; des mouvements de transitions,</li>
               <li>&gt; les astuces pour gagner en fluidité,</li>
-              <li>
-                &gt; à travailler ta musicalité et à trouver ta personnalité
-                aérienne 🫶🏼.
-              </li>
+              <li>&gt; à travailler ta musicalité,</li>
+              <li>&gt; ...et à trouver ta personnalité aérienne 🫶🏼.</li>
             </ul>
           </p>
-          <p className="text-xl text-center text-indigo-950 leading-relaxed mb-2">
+          <p className="text-lg text-center text-indigo-950 leading-relaxed mb-2">
             <b>
               Si tu n'en a jamais fait, pas de panique... on a tous commencé un
               jour 😄 !

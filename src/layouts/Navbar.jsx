@@ -6,6 +6,8 @@ import navlinksBurger from "../data/navlinksBurger";
 
 import coursesLinks from "../data/coursesLinks";
 
+import Social from "../components/Social";
+
 // import { motion } from "framer-motion";
 
 const NavbarTitle = () => {
@@ -207,6 +209,8 @@ const Navbar = () => {
           ))}
         </div>
       )}
+      {/* ----- SOCIAL ICONS----- */}
+      <Social />
     </nav>
   );
 };

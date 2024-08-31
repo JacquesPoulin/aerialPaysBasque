@@ -62,24 +62,12 @@ const Enfant = () => {
           </p>
 
           <p className="text-lg text-indigo-950 leading-relaxed mb-4 text-justify">
-            Ils développeront ainsi : <br />
-            <ul className="ml-4">
-              <li>
-                - <span className="text-pink-500 ">coordination</span>,
-              </li>
-              <li>
-                - <span className="text-pink-500 ">souplesse</span>
-              </li>
-              <li>
-                - <span className="text-pink-500 ">équilibre</span>
-              </li>
-              <li>
-                - <span className="text-pink-500 ">agilité</span>
-              </li>
-              <li>
-                - <span className="text-pink-500 ">créativité</span>
-              </li>
-            </ul>
+            Ils développeront ainsi :{" "}
+            <span className="text-pink-500 ">coordination</span>,{" "}
+            <span className="text-pink-500 ">souplesse</span>,{" "}
+            <span className="text-pink-500 ">équilibre</span>,{" "}
+            <span className="text-pink-500 ">agilité</span> et{" "}
+            <span className="text-pink-500 ">créativité</span>.
           </p>
 
           <p className="text-lg text-indigo-950 leading-relaxed mb-4 text-justify">

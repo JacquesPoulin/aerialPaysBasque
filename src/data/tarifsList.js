@@ -2,7 +2,7 @@ const tarifsList = [
   {
     type: "abonnement",
     category: "adulte",
-    titre: "Adultes",
+    titre: "ADULTES",
     date: "du 05.09 au 30.06",
     details: [
       "______________",
@@ -18,14 +18,14 @@ const tarifsList = [
   {
     type: "abonnement",
     category: "enfant",
-    titre: "Enfants",
+    titre: "ENFANTS",
     date: "du 05.09 au 30.06",
     details: [
       "______________",
       "250€ l'année",
       "(25€ / mois)",
       "↪ PAYABLE EN 2 FOIS ↩",
-      "______________",
+      "_____  ou  _____",
       "100€ le trimestre",
     ],
   },

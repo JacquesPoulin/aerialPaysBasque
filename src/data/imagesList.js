@@ -15,7 +15,9 @@ const imagesList = {
     "/assets/pics/cerceau/cerceau_7.jpg",
     "/assets/pics/cerceau/cerceau_8.jpg",
   ],
-  tissu: ["/assets/pics/pilates/Lauree.jpg"],
+  tissu: [
+    "https://www.madmoizelle.com/wp-content/uploads/2013/01/tissu-aerien.jpg",
+  ],
   pilates: [
     "/assets/pics/pilates/laureen_2.jpg",
     "/assets/pics/pilates/laureen_4.jpg",
@@ -23,7 +25,13 @@ const imagesList = {
     "/assets/pics/pilates/relaxation_2.jpg",
     "/assets/pics/pilates/relaxation_3.jpg",
   ],
-  autres: ["/assets/pics/.jpg", "/assets/pics/.jpg"],
+  infos: [
+    "/assets/pics/autres/promo_2.jpg",
+    "/assets/pics/autres/decouverte.jpg",
+    "/assets/pics/autres/inscription.jpg",
+    "/assets/pics/autres/infos_1.jpg",
+    "/assets/pics/autres/tarifs.png",
+  ],
 };
 
 export default imagesList;

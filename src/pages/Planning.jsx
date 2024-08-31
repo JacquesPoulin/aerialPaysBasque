@@ -47,8 +47,8 @@ const Planning = () => {
         data-aos="zoom-in"
       >
         {/* Titre et sous-titre */}
-        <div className="w-full flex justify-center items-center gap-4">
-          <div className="w-1/4 h-1 bg-purple-100 rounded-lg"></div>
+        <div className="w-full flex flex-col md:flex-row justify-center items-center gap-4 md:gap-16 py-5 md:py-2">
+          <div className="w-52 h-2 bg-purple-100 rounded-lg"></div>
           <h2
             className={`text-2xl sm:text-4xl font-extrabold text-indigo-950 text-center ${
               isMobile ? "text-2xl" : "text-4xl"
@@ -56,7 +56,7 @@ const Planning = () => {
           >
             Planning
           </h2>
-          <div className="w-1/4 h-1 bg-purple-100 rounded-lg"></div>
+          <div className="w-52 h-2 bg-purple-100 rounded-lg"></div>
         </div>
 
         <p className="text-center font-semibold text-indigo-950 mb-4">
@@ -67,7 +67,7 @@ const Planning = () => {
         <div className="text-center mb-12">
           <img
             // src="https://lenvoleepoledancestudio.fr/wp-content/uploads/2024/05/Planning-2024-2025_site_Plan-de-travail-1.png" // TODO : Remplacer avec l'image appropriée
-            src="../../public/assets/pics/autres/planning_4.jpg" // TODO : Remplacer avec l'image appropriée
+            src="/assets/pics/autres/planning_4.jpg" // TODO : Remplacer avec l'image appropriée
             alt="Planning 2024-2025"
             className="max-w-full h-auto rounded-lg shadow-lg"
           />

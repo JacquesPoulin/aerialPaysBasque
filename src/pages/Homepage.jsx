@@ -47,7 +47,7 @@ const Homepage = () => {
           {/* QUI SOMMES-NOUS */}
           <div className="relative space-y-6 mt-10 mb-20">
             <div
-              className="bg-white shadow-xl p-8 rounded-lg relative z-20"
+              className="bg-white shadow-xl p-4 rounded-lg relative z-20"
               data-aos="fade-in"
             >
               {/* <h3 className="text-2xl font-bold text-indigo-950">
@@ -57,7 +57,10 @@ const Homepage = () => {
                 Chez Aerial Pays Basque, nous croyons que le bien-être quotidien
                 passe par une pratique sportive régulière et épanouissante.
               </p>
-              <p className="text-lg text-indigo-950 mt-4" data-aos="zoom-in">
+              <p
+                className="text-indigo-950 text-justify md:text-lg md:text-center mt-4 mb-4 md:mb-10"
+                data-aos="zoom-in"
+              >
                 Nos cours, adaptés à tous les niveaux, vous permettront de vous{" "}
                 <span className="text-pink-500 ">renforcer</span>, de gagner en{" "}
                 <span className="text-pink-500 ">souplesse</span> et d'améliorer
@@ -68,15 +71,15 @@ const Homepage = () => {
 
               {/* Section Présentation */}
               <div
-                className="flex justify-between mt-12"
+                className="flex flex-col md:flex-row gap-6 items-center md:items-start"
                 data-aos="zoom-out-up"
               >
                 <img
                   src="/assets/pics/laureen/laureen_6.jpg"
-                  alt=""
-                  className="w-1/2"
+                  alt="Laureen Davant"
+                  className="w-full md:w-1/2 h-auto rounded-lg object-cover"
                 />
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4 w-full md:w-1/2">
                   <h4 className="text-3xl text-indigo-800 tracking-wide">
                     Qui suis-je ?
                   </h4>
