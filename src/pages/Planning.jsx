@@ -67,11 +67,11 @@ const Planning = () => {
         <div className="text-center mb-12">
           {/* Pastille promotionnelle */}
           <div className=" my-4 mx-auto  text-red-600 text-xs py-1 rounded-lg animate-pulse">
-            <p className="text-lg">
+            <p className="text-sm md:text-lg">
               Adultes : Pas de cours la 2ème semaine des vacances scolaires{" "}
               <br />
               Enfants : Pas de cours pendant les vacances scolaires <br />
-              L'association est fermée durant les vacances de fin d'année.
+              L'association est fermée durant les vacances de fin d'année
             </p>
           </div>
 
@@ -112,7 +112,7 @@ const Planning = () => {
                   className="text-pink-500 hover:underline"
                   title="Ouvrir avec Google Maps"
                 >
-                  Voir sur la carte
+                  Carte
                 </a>
               </div>
             </div>
@@ -134,7 +134,7 @@ const Planning = () => {
                   className="text-pink-500 hover:underline"
                   title="Ouvrir avec Google Maps"
                 >
-                  Voir sur la carte
+                  Carte
                 </a>
               </div>
             </div>

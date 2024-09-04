@@ -11,7 +11,7 @@ const tarifsList = [
       "(40€ / mois)",
       "38 cours",
       // "-   OU   -",
-      "-----------",
+      "----- ou -----",
       "2 cours / semaine: 650€",
       "(65€ / mois)",
       "76 cours",

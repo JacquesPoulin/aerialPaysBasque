@@ -90,7 +90,7 @@ const Navbar = () => {
                           </svg>
                         </button>
 
-                        <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-50">
                           {coursesLinks &&
                             coursesLinks.map(({ path, title }) => (
                               <NavLink
