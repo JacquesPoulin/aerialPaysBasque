@@ -82,6 +82,11 @@ const Footer = () => {
                 </NavLink>
               </li>
             </ul>
+            {/* <img
+              src="../../public/assets/pics/autres/logo_federation_1.jpg"
+              alt=""
+              className="w-40 rounded-lg mt-4"
+            /> */}
           </div>
 
           {/* Section Contact */}
@@ -124,37 +129,46 @@ const Footer = () => {
 
           {/* Section Réseaux Sociaux + mail */}
           <div className="mb-8 md:mb-0 text-center md:text-left">
-            <h3 className="text-lg font-semibold mb-4">SUIVEZ-NOUS</h3>
-            <div className="flex justify-center md:justify-center space-x-4">
-              <a
-                href="https://www.facebook.com/profile.php?id=61563450955831"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Découvrir mon facebook"
-              >
-                <FaFacebookF className="w-6 h-6 hover:text-pink-300" />
-              </a>
-              <a
-                href="https://www.instagram.com/aerial_paysbasque?igsh=MTEzYnJmc2ViZGtiaQ=="
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Découvrir mon Instagram"
-              >
-                <FaInstagram className="w-6 h-7 hover:text-pink-300" />
-              </a>
+            <h3 className="text-lg font-semibold mb-4 md:text-center">
+              SUIVEZ-NOUS
+            </h3>
+            <div className="flex flex-col justify-center items-center">
+              <div className="flex justify-center md:justify-center space-x-4">
+                <a
+                  href="https://www.facebook.com/profile.php?id=61563450955831"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Découvrir mon facebook"
+                >
+                  <FaFacebookF className="w-6 h-6 hover:text-pink-300" />
+                </a>
+                <a
+                  href="https://www.instagram.com/aerial_paysbasque?igsh=MTEzYnJmc2ViZGtiaQ=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Découvrir mon Instagram"
+                >
+                  <FaInstagram className="w-6 h-7 hover:text-pink-300" />
+                </a>
 
-              <a
-                href="mailto:aerialpaysbasque@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Envoyer un mail"
-              >
-                <HiOutlineMail className="w-7 h-7 hover:text-pink-300" />
-              </a>
+                <a
+                  href="mailto:aerialpaysbasque@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Envoyer un mail"
+                >
+                  <HiOutlineMail className="w-7 h-7 hover:text-pink-300" />
+                </a>
+              </div>
+
+              <img
+                src="/assets/pics/autres/logo_federation_1.jpg"
+                alt=""
+                className="w-40 rounded-lg mt-4"
+              />
             </div>
           </div>
         </div>
-
         {/* Section Copyright */}
         <div className="mt-8 border-t border-gray-700 pt-4 text-center">
           <p>&copy; {currentYear} Aerial Pays Basque. Tous droits réservés.</p>

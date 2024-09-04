@@ -35,7 +35,8 @@ const Social = () => {
         </li>
 
         {/* ----- EMAIL ----- */}
-        <li className="w-36 h-8 pr-2 flex rounded-r-lg justify-between items-center -ml-28 hover:-ml-3 duration-300 bg-green-700">
+        {/* <li className="w-36 h-8 pr-2 flex rounded-r-lg justify-between items-center -ml-28 hover:-ml-3 duration-300 bg-green-700"> */}
+        <li className="w-36 h-8 pr-2 flex rounded-r-lg justify-between items-center -ml-28 hover:-ml-3 duration-300 bg-emerald-600">
           <a
             href="mailto:aerialpaysbasque@gmail.com"
             target="_blank"

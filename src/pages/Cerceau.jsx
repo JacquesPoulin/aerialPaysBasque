@@ -124,7 +124,7 @@ const Cerceau = () => {
             .
           </p>
           <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
-            Ils durent une heure et sont composés d'un échauffement ciblé, d'un
+            Ils durent 1h et sont composés d'un échauffement ciblé, d'un
             corps de séance et d'étirements.
           </p>
 

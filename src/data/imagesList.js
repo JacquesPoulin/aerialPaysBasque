@@ -31,6 +31,7 @@ const imagesList = {
     "/assets/pics/autres/inscription.jpg",
     "/assets/pics/autres/infos_1.jpg",
     "/assets/pics/autres/tarifs.png",
+    "/assets/pics/autres/infos_tenue.png",
   ],
 };
 

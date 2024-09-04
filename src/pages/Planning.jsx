@@ -65,9 +65,19 @@ const Planning = () => {
 
         {/* Image du planning */}
         <div className="text-center mb-12">
+          {/* Pastille promotionnelle */}
+          <div className=" my-4 mx-auto  text-red-600 text-xs py-1 rounded-lg animate-pulse">
+            <p className="text-lg">
+              Adultes : Pas de cours la 2ème semaine des vacances scolaires{" "}
+              <br />
+              Enfants : Pas de cours pendant les vacances scolaires <br />
+              L'association est fermée durant les vacances de fin d'année.
+            </p>
+          </div>
+
           <img
             // src="https://lenvoleepoledancestudio.fr/wp-content/uploads/2024/05/Planning-2024-2025_site_Plan-de-travail-1.png" // TODO : Remplacer avec l'image appropriée
-            src="/assets/pics/autres/planning_4.jpg" // TODO : Remplacer avec l'image appropriée
+            src="/assets/pics/autres/planning_4.jpg"
             alt="Planning 2024-2025"
             className="max-w-full h-auto rounded-lg shadow-lg"
           />

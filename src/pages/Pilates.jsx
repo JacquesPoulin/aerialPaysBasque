@@ -23,7 +23,7 @@ const Pilates = () => {
 
     // Détecter si on est sur un écran mobile
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Mobile si l'écran est plus petit que 768px
+      setIsMobile(window.innerWidth <= 668); // Mobile si l'écran est plus petit que 768px
     };
 
     handleResize(); // Appel initial pour définir l'état au chargement
@@ -59,25 +59,32 @@ const Pilates = () => {
           data-aos="zoom-in"
         >
           <p className="text-lg text-indigo-950 first-letter:text-xl first-letter:font-bold first-letter:ml-4 leading-relaxed mb-2 text-justify">
-            Le Pilates est une méthode de conditionnement physique qui se
-            concentre sur le renforcement du "centre" du corps, améliorant ainsi
-            la posture, la stabilité et la souplesse.
+            Le Pilates est une méthode sportive qui trouve ses origines au début
+            du 20ᵉ siècle. Il a été inventé par Joseph Pilates, un Allemand
+            passionné par le sport et la rééducation. Lorsqu&#39;il était
+            interné en Angleterre durant la Première Guerre mondiale, il
+            développa cette méthode pour aider ses compagnons à rester en forme
+            en utilisant des exercices basés sur le contrôle, la respiration, et
+            la concentration.
           </p>
 
           <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
-            En travaillant sur des mouvements contrôlés et précis, le Pilates
-            permet de développer la{" "}
-            <span className="text-pink-500 ">force</span>, la{" "}
-            <span className="text-pink-500 ">souplesse</span>, et l'{" "}
-            <span className="text-pink-500 ">équilibre</span> tout en favorisant
-            une meilleure prise de conscience corporelle.
+            Le Pilates vise à{" "}
+            <span className="text-pink-500 ">
+              renforcer les muscles profonds
+            </span>
+            , <span className="text-pink-500 ">améliorer la posture</span>, et{" "}
+            <span className="text-pink-500 ">favoriser la souplesse</span>, tout
+            en <span className="text-pink-500 ">réduisant le stress</span>.
           </p>
 
           <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
-            Cette discipline, adaptée à tous les niveaux, est particulièrement
-            bénéfique pour ceux qui cherchent à améliorer leur posture et à
-            prévenir les blessures.
+            Aujourd&#39;hui, cette discipline adaptée à tous les niveaux, est
+            pratiquée dans le monde entier, tant pour la remise en forme, la
+            rééducation et est particulièrement bénéfique pour ceux qui
+            cherchent à prévenir les blessures.
           </p>
+
           <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
             Elle peut être pratiquée seule ou en complément d'autres activités
             physiques pour un développement musculaire harmonieux.
@@ -85,23 +92,44 @@ const Pilates = () => {
 
           <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
             <b>
-              Que vous soyez débutant ou pratiquant confirmé, nos cours de
-              Pilates vous aideront à atteindre vos objectifs de fitness tout en
-              prenant soin de votre bien-être général.
+              Que vous soyez débutant ou confirmé, nos cours sont adaptés à tous
+              les niveaux !
             </b>
+          </p>
+          <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-center">
+            Les cours de pilates ont lieu le : <b>Jeudi à 10h30</b> à la{" "}
+            <a
+              href="https://www.google.com/maps?q=22+Avenue+Larochefoucauld,+64200+Biarritz,+France"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-indigo-500 hover:underline"
+              title="Ouvrir avec Google Maps"
+            >
+              <b>Salle Les Turbulents à Biarritz</b>
+            </a>
+            .
+          </p>
+          <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
+            Ils durent 1 h et sont constitués d’un échauffement, d’un corps de
+            séance et d’un retour au calme.
           </p>
         </div>
 
-        {/* Bouton vers la galerie et tarifs */}
-        <div
-          className={`${
-            isMobile
-              ? "flex flex-col justify-center items-center gap-2 mt-12"
-              : "flex justify-center items-center gap-8 mt-20"
-          }`}
-        >
-          <BoutonGalerie texte="Voir la Galerie" />
-          <BoutonReservation texte="Réserver mon 1er cours" />
+        <div className="relative mt-8">
+          <img
+            src="/assets/pics/autres/pilates_infos.png"
+            alt=""
+            className="w-full rounded-lg"
+          />
+          {/* Conteneur pour les boutons */}
+          <div
+            className={`absolute inset-x-0 bottom-1 ${
+              isMobile ? "hidden" : "flex justify-around items-center"
+            }`}
+          >
+            <BoutonGalerie texte="Voir la Galerie" />
+            <BoutonReservation texte="Réserver mon 1er cours" />
+          </div>
         </div>
       </div>
     </div>

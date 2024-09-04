@@ -41,17 +41,24 @@ const Tarifs = () => {
             2024 - 2025
           </p>
           {/* Pastille promotionnelle */}
-          <div className=" w-32 my-0 mx-auto bg-red-500 text-white text-xs font-bold px-2 py-1 animate-pulse">
+          <div className=" w-32 my-0 mx-auto bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-lg animate-pulse">
             <Link to="/contact" title="Me contacter">
               <button>1er Cours Gratuit !</button>
             </Link>
           </div>
 
           {/* Section des abonnements */}
-          <div className="w-full px-4">
-            <h3 className="text-2xl font-bold text-indigo-950 mt-10 mb-8 text-center">
+          <div className="w-full px-4 py-2">
+            <h3 className="text-2xl font-bold text-indigo-950 mt-10 mb-1 text-center">
               Nos Abonnements
             </h3>
+            {/* <h3 className="text-2xl font-bold text-indigo-950 mt-10 mb-8 text-center">
+              Nos Abonnements (adultes)
+            </h3> */}
+
+            <p className="text-sm italic text-indigo-950 text-center mb-10">
+              Le tarif des abonnements inclus la licence sport pour tous
+            </p>
 
             {/* Cartes des tarifs */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -63,7 +70,7 @@ const Tarifs = () => {
                       key={id}
                       className="w-[22rem] max-w-xs mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-indigo-950 dark:border-gray-700 text-center flex flex-col"
                     >
-                      {tarif.category === "adulte" ? (
+                      {tarif.activite === "cerceau" && (
                         <Link to="/galerie" title="Découvrir la galerie">
                           <img
                             className="rounded-t-lg object-cover h-48 w-full"
@@ -71,7 +78,19 @@ const Tarifs = () => {
                             alt=""
                           />
                         </Link>
-                      ) : (
+                      )}
+
+                      {tarif.activite === "pilates" && (
+                        <Link to="/galerie" title="Découvrir la galerie">
+                          <img
+                            className="rounded-t-lg object-cover h-48 w-full"
+                            src="/assets/pics/pilates/laureen_2.jpg"
+                            alt=""
+                          />
+                        </Link>
+                      )}
+
+                      {tarif.activite === "enfant" && (
                         <Link to="/galerie" title="Découvrir la galerie">
                           <img
                             className="rounded-t-lg object-cover h-48 w-full"
@@ -81,6 +100,16 @@ const Tarifs = () => {
                         </Link>
                       )}
 
+                      {/* : (
+                      <Link to="/galerie" title="Découvrir la galerie">
+                        <img
+                          className="rounded-t-lg object-cover h-48 w-full"
+                          // src="https://static.wixstatic.com/media/466954_7a36fa4e14f14330b33b595c74f0d2c0~mv2.jpg/v1/fill/w_449,h_539,al_c,q_80,enc_auto/Evie.jpg"
+                          src="/assets/pics/pilates/laureen_2.jpg"
+                          alt=""
+                        />
+                      </Link>
+                      )} */}
                       <div className="p-4 flex flex-col flex-grow items-center">
                         <a href="#">
                           <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-slate-50">
@@ -128,12 +157,19 @@ const Tarifs = () => {
             </button>
           </div>
         </div>
+
         {/* Section "A la Carte" */}
         {showAlaCarte && (
           <div className="mt-8 w-full px-4 text-center">
-            <h3 className="text-2xl font-bold text-indigo-950 mb-8 text-center">
-              A la Carte
+            <h3 className="text-2xl font-bold text-indigo-950 mb-2 text-center">
+              Séance à la Carte (adultes)
             </h3>
+            <p className="text-sm italic text-indigo-950 text-center mb-1">
+              Carnets de séance <b>valable 3 mois</b>
+            </p>
+            <p className="text-sm italic text-indigo-950 text-center mb-10">
+              (non échangeables & non remboursables)
+            </p>
             <div className="max-w-xs mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-indigo-950  dark:border-gray-700 flex flex-col">
               <Link to="/galerie" title="Découvrir la galerie">
                 <img

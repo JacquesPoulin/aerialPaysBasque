@@ -35,13 +35,15 @@ const Homepage = () => {
           >
             Bienvenue chez Aerial Pays Basque
           </h2> */}
-          <p
-            className="text-xl font-bold text-indigo-950  tracking-wide mb-10"
-            data-aos="fade-in"
-          >
+          <p className="text-xl font-bold text-indigo-950  tracking-wide mb-8">
             Aerial Pays Basque est une association loi 1901 proposant des cours
             de cerceau aérien, de tissu aérien et de pilates, pour tout public.
             {/* (enfants à partir de 8 ans). */}
+          </p>
+
+          <p className="text-sm italic font-bold text-indigo-950  tracking-wide">
+            " Le bonheur c'est de se sentir bien dans son corps et dans son
+            esprit "
           </p>
 
           {/* QUI SOMMES-NOUS */}
@@ -142,20 +144,31 @@ const Homepage = () => {
           </div>
         </div>
       </div>
-      {/* Section Image centrée */}
-      <div className="flex flex-col gap-3 justify-center items-center bg-gray-100">
-        {/* <Link to="/galerie">
-          <img
-            src="/assets/pics/Laureen_Cerceau_2_retouchée.jpg"
-            className="max-w-[56rem] h-auto rounded-lg shadow-lg cursor-pointer"
-            alt="Présentation Aerial Pays Basque"
-            title="Voir la galerie"
-            data-aos="zoom-in"
-          />
-        </Link> */}
-        {/* <p className="mt-2 mb-12 italic">- Cerceau aérien -</p> */}
 
-        <BoutonSavoirPlus texte="En Savoir Plus" />
+      {/* Section CTA button */}
+      <div className="flex flex-col md:flex-row justify-center items-center bg-gray-100 pb-20">
+        {/* Première iframe */}
+        <iframe
+          id="haWidget"
+          allowtransparency="true"
+          src="https://www.helloasso.com/associations/aerial-pays-basque/formulaires/1/widget-bouton"
+          className="border-none h-[70px] w-[250px]"
+          data-aos="fade-right"
+          title="Faire un don et contribuer à faire grandir l'association"
+        ></iframe>
+
+        {/* Bouton personnalisé */}
+        {/* <BoutonSavoirPlus texte="En Savoir Plus" /> */}
+
+        {/* Deuxième iframe */}
+        <iframe
+          id="haWidget"
+          allowtransparency="true"
+          src="https://www.helloasso.com/associations/aerial-pays-basque/adhesions/adhesion-2024-2025/widget-bouton"
+          className="border-none h-[70px] w-[250px]"
+          data-aos="fade-left"
+          title="Adhérer à l'association"
+        ></iframe>
       </div>
     </div>
   );
