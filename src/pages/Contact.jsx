@@ -96,7 +96,7 @@ const Contact = () => {
         {/* Section infos Contact */}
         <div className="px-4">
           <ul className="w-full flex flex-col justify-center items-center gap-2 text-indigo-950 text-center">
-            <li className="">
+            {/* <li className="">
               <a
                 href="https://www.google.com/maps?q=22+Avenue+Larochefoucauld,+64200+Biarritz,+France"
                 target="_blank"
@@ -106,7 +106,7 @@ const Contact = () => {
               >
                 22 Avenue Larochefoucauld, 64200 Biarritz, France
               </a>
-            </li>
+            </li> */}
             <li>
               <button
                 onClick={() => setShowModal(true)}
@@ -131,13 +131,8 @@ const Contact = () => {
 
         {/* Carte Google */}
         <div className="flex justify-center items-center mt-10 mb-20 px-4">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.840123402317!2d-1.546390623553295!3d43.48480677111063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd516ac65d4f2cf7%3A0x8c26a43f89495463!2s22%20Av.%20Larochefoucauld%2C%2064200%20Biarritz!5e0!3m2!1sfr!2sfr!4v1724965833323!5m2!1sfr!2sfr"
-            className="w-full md:w-[600px] h-[300px] md:h-[450px] rounded-lg shadow-lg border-4 border-indigo-950"
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+          {/* <img src="/assets/pics/cerceau/cerceau_7.jpg" alt="" className="w-2/3"/>{" "} */}
+          <img src="/assets/pics/cerceau/cerceau_4.jpg" alt="" className="w-2/3"/>{" "}
         </div>
       </div>
       {showModal && <ContactOptions onClose={() => setShowModal(false)} />}
