@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { FaHandPointLeft } from "react-icons/fa";
 
 import BoutonGalerie from "../layouts/BoutonGalerie";
-import BoutonReservation from "../layouts/BoutonReservation";
+// import BoutonReservation from "../layouts/BoutonReservation";
+import BoutonPreResa from "../layouts/BoutonPreResa";
 
 import { FaWhatsapp } from "react-icons/fa";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+const style = { color: "#440d93", fontSize: "1.5em" };
 
 const Enfant = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -43,7 +47,7 @@ const Enfant = () => {
       </div>
 
       {/* Contenu principal */}
-      <div className="max-w-4xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-5xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <h2
           className="text-4xl font-extrabold text-indigo-950 text-center mb-8"
           data-aos="zoom-in"
@@ -51,14 +55,20 @@ const Enfant = () => {
           Les Ptis Zacrobates
         </h2>
 
+        <div className=" w-32 mb-10 mx-auto bg-indigo-700 text-white text-lg font-bold p-4 rounded-lg animate-pulse">
+          <Link to="/contact" title="Me contacter">
+            <button>RENTRÉE 2025</button>
+          </Link>
+        </div>
+
         <div
           className="bg-white shadow-xl p-8 rounded-lg relative z-20 tracking-wide"
           data-aos="zoom-in"
         >
           <p className="text-lg text-indigo-950 first-letter:text-xl first-letter:font-bold first-letter:ml-4 leading-relaxed mb-2 text-justify">
-            Nous accueillons les enfants avec enthousiasme et offrons des
-            activités aériennes adaptées à leur âge et à leur niveau{" "}
-            <i> (de 8 à 15 ans).</i>
+            À la rentrée 2025, nous accueillerons les enfants avec enthousiasme
+            et offrirons des activités aériennes adaptées à leur âge et à leur
+            niveau <i> (de 8 à 15 ans).</i>
           </p>
 
           <p className="text-lg text-indigo-950 leading-relaxed mb-4 text-justify">
@@ -107,6 +117,9 @@ const Enfant = () => {
             une excellente manière de compléter leur développement global et
             d'encourager un mode de vie actif et sain.
           </p>
+          <p className="text-lg text-indigo-950 leading-relaxed mb-4 text-center font-bold">
+            N'hésitez pas à préréserver votre cours !
+          </p>
         </div>
 
         {/* Bouton vers la galerie et tarifs */}
@@ -118,7 +131,10 @@ const Enfant = () => {
           }`}
         >
           <BoutonGalerie texte="Voir la Galerie" />
-          <BoutonReservation texte="Réserver mon 1er cours" />
+          <BoutonPreResa texte="Préréservation" />
+          <div className="hidden md:block mb-10 animate-bounce">
+            <FaHandPointLeft style={style} />
+          </div>
         </div>
       </div>
     </div>

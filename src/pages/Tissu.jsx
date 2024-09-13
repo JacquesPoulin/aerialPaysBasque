@@ -38,16 +38,16 @@ const Tissu = () => {
       <div className="w-full h-[21rem] overflow-hidden">
         <Link to="/galerie">
           <img
-            // src="/assets/pics/cerceau/nature/cerceau_nature_1.jpg"
-            src="/assets/pics/tissu/tissu_1.jpeg"
+            src="/assets/pics/cerceau/nature/cerceau_nature_1.jpg"
+            // src="/assets/pics/tissu/IMG-20240913-WA0017.jpg"
             alt="Tissu aérien"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover -mb-20"
           />
         </Link>
       </div>
 
       {/* Contenu principal */}
-      <div className="max-w-4xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-5xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <h2
           className="text-4xl font-extrabold text-indigo-950 text-center mb-8"
           data-aos="zoom-in"

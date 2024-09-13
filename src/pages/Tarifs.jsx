@@ -21,7 +21,7 @@ const Tarifs = () => {
       {/* Image de bandeau */}
       <div className="w-full h-[21rem] overflow-hidden bg-gray-100">
         <img
-          src="/assets/pics/autres/bandeau_intro.png"
+          src="/assets/pics/logos/logo_test.jpg"
           alt="Bandeau de présentation"
           className="w-full h-full object-cover"
         />
@@ -56,8 +56,12 @@ const Tarifs = () => {
               Nos Abonnements (adultes)
             </h3> */}
 
-            <p className="text-sm italic text-indigo-950 text-center mb-10">
+            <p className="text-sm italic text-indigo-950 text-center mb-2">
               Le tarif des abonnements inclus la licence sport pour tous
+            </p>
+            <p className="text-sm italic text-indigo-950 text-center mb-10">
+              Si vous arrivez en cours de saison, le tarif sera au prorata des
+              mois restants
             </p>
 
             {/* Cartes des tarifs */}
@@ -132,16 +136,31 @@ const Tarifs = () => {
                           ))}
                         </ul>
                       </div>
-                      <button className="px-6 py-2 text-slate-50 bg-indigo-900 rounded-md shadow hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-400">
-                        <a
-                          rel="noopener noreferrer"
-                          href="https://www.helloasso.com/associations/aerial-pays-basque/adhesions/adhesion-2024-2025"
-                          target="_blank"
-                          title="Inscription à l'association"
-                        >
-                          S'INSCRIRE
-                        </a>
-                      </button>
+                      {tarif.activite === "enfant" ? (
+                        <button className="px-6 py-2 text-slate-50 bg-indigo-900 rounded-md shadow hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-400">
+                          <a
+                            href="mailto:aerialpaysbasque@gmail.com"
+                            // href="https://www.helloasso.com/associations/aerial-pays-basque/adhesions/adhesion-2024-2025"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title="Se pré-inscrire pour la prochaine rentrée 2025"
+                          >
+                            Préinscription (rentrée 2025)
+                          </a>
+                        </button>
+                      ) : (
+                        <button className="px-6 py-2 text-slate-50 bg-indigo-900 rounded-md shadow hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-400">
+                          <a
+                            href="mailto:aerialpaysbasque@gmail.com"
+                            // href="https://www.helloasso.com/associations/aerial-pays-basque/adhesions/adhesion-2024-2025"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title="Inscription à l'association"
+                          >
+                            S'INSCRIRE
+                          </a>
+                        </button>
+                      )}
                     </div>
                   ))}
             </div>
@@ -200,9 +219,10 @@ const Tarifs = () => {
               </div>
               <button className="px-6 py-2 text-slate-50 bg-indigo-900 rounded-md shadow hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-400">
                 <a
-                  rel="noopener noreferrer"
-                  href="https://www.helloasso.com/associations/aerial-pays-basque/adhesions/adhesion-2024-2025"
+                  href="mailto:aerialpaysbasque@gmail.com"
+                  // href="https://www.helloasso.com/associations/aerial-pays-basque/adhesions/adhesion-2024-2025"
                   target="_blank"
+                  rel="noopener noreferrer"
                   title="Inscription à l'association"
                 >
                   S'INSCRIRE

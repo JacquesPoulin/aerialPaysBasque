@@ -72,7 +72,7 @@ const Galerie = () => {
           {/* Bandeau de présentation */}
           <div className="w-full h-[20rem] overflow-hidden">
             <img
-              src="/assets/pics/autres/bandeau_intro.png"
+              src="/assets/pics/logos/logo_test.jpg"
               alt="Bandeau galerie"
               className="w-full h-full object-cover"
             />
@@ -80,7 +80,7 @@ const Galerie = () => {
 
           {/* Contenu principal */}
           <div
-            className="max-w-4xl mx-auto py-16 px-4 sm:px-6 lg:px-8"
+            className="max-w-5xl mx-auto py-16 px-4 sm:px-6 lg:px-8"
             data-aos="zoom-in"
           >
             <div className="w-full flex justify-center items-center gap-4">
@@ -103,7 +103,7 @@ const Galerie = () => {
                     className="relative flex flex-wrap justify-center p-1 list-none rounded-lg bg-blue-gray-50/60"
                     role="tablist"
                   >
-                    {imagesNavList.map(({ id, label }) => (
+                    {imagesNavList?.map(({ id, label }) => (
                       <li
                         key={id}
                         className="flex-auto text-center mb-2 md:mb-0"
@@ -130,7 +130,7 @@ const Galerie = () => {
                   value={activeTab}
                   onChange={(e) => setActiveTab(e.target.value)}
                 >
-                  {imagesNavList.map(({ id, label }) => (
+                  {imagesNavList?.map(({ id, label }) => (
                     <option key={id} value={id}>
                       {label}
                     </option>
@@ -141,31 +141,32 @@ const Galerie = () => {
 
             {/* Contenu des images */}
             <div className="mt-10">
-              {imagesNavList.map(({ id }) => (
+              {imagesNavList?.map(({ id }) => (
                 <div
                   key={id}
                   className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 ${
                     activeTab === id ? "block" : "hidden"
                   }`}
                 >
-                  {imagesList[id].map((src, index) => (
-                    <div
-                      key={index}
-                      className="relative flex justify-center transition-transform transform hover:scale-105"
-                      onClick={() =>
-                        setSelectedImage({
-                          src,
-                          alt: `image-${id}-${index}`,
-                        })
-                      }
-                    >
-                      <img
-                        className="w-full h-auto max-w-full rounded-lg object-cover cursor-pointer"
-                        src={src}
-                        alt={`image-${id}-${index}`}
-                      />
-                    </div>
-                  ))}
+                  {imagesList[id] &&
+                    imagesList[id].map((src, index) => (
+                      <div
+                        key={index}
+                        className="relative flex justify-center transition-transform transform hover:scale-105"
+                        onClick={() =>
+                          setSelectedImage({
+                            src,
+                            alt: `image-${id}-${index}`,
+                          })
+                        }
+                      >
+                        <img
+                          className="w-full h-auto max-w-full rounded-lg object-cover cursor-pointer"
+                          src={src}
+                          alt={`image-${id}-${index}`}
+                        />
+                      </div>
+                    ))}
                 </div>
               ))}
             </div>

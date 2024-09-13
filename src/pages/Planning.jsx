@@ -35,7 +35,7 @@ const Planning = () => {
       {/* Bandeau de présentation */}
       <div className="w-full h-[20rem] overflow-hidden">
         <img
-          src="/assets/pics/autres/bandeau_intro.png" // Remplace avec l'image appropriée
+          src="/assets/pics/logos/logo_test.jpg" // TODO Remplacer avec l'image appropriée
           alt="Bandeau de Planning"
           className="w-full h-full object-cover"
         />
@@ -43,7 +43,7 @@ const Planning = () => {
 
       {/* Contenu principal */}
       <div
-        className="max-w-4xl mx-auto py-8 px-4 sm:px-6 lg:px-8"
+        className="max-w-5xl mx-auto py-8 px-4 sm:px-6 lg:px-8"
         data-aos="zoom-in"
       >
         {/* Titre et sous-titre */}

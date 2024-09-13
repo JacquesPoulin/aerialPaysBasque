@@ -4,7 +4,8 @@ import { Link, NavLink } from "react-router-dom";
 import navlinks from "../data/navlinks";
 import navlinksBurger from "../data/navlinksBurger";
 
-import coursesLinks from "../data/coursesLinks";
+import coursLinks from "../data/coursLinks";
+import planningLinks from "../data/planningLinks";
 
 import Social from "../components/Social";
 
@@ -52,7 +53,8 @@ const NavbarTitle = () => {
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isCoursesOpen, setIsCoursesOpen] = useState(false);
+  const [isCoursOpen, setIsCoursOpen] = useState(false);
+  const [isPlanningOpen, setIsPlanningOpen] = useState(false);
 
   const handleLinkClick = () => {
     setIsOpen(false); // Ferme le menu burger si un lien est cliqué
@@ -90,9 +92,10 @@ const Navbar = () => {
                           </svg>
                         </button>
 
+                        {/* Sous menus des cours */}
                         <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-50">
-                          {coursesLinks &&
-                            coursesLinks.map(({ path, title }) => (
+                          {coursLinks &&
+                            coursLinks.map(({ path, title }) => (
                               <NavLink
                                 key={path}
                                 to={path}
@@ -108,6 +111,44 @@ const Navbar = () => {
                                 {title}
                               </NavLink>
                             ))}
+                        </div>
+                      </>
+                    ) : titre === "Planning" ? (
+                      <>
+                        <button className="text-indigo-950 hover:text-pink-600 rounded-lg flex items-center">
+                          Planning
+                          <svg
+                            className="w-4 h-4 inline ml-2"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M19 9l-7 7-7-7"
+                            ></path>
+                          </svg>
+                        </button>
+
+                        {/* Sous menus de Planning */}
+                        <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-50">
+                          {planningLinks.map(({ path, title }) => (
+                            <NavLink
+                              key={path}
+                              to={path}
+                              onClick={handleLinkClick}
+                              className={({ isActive }) =>
+                                `block px-4 py-2 text-sm hover:text-indigo-500 ${
+                                  isActive ? "text-pink-600" : "text-indigo-950"
+                                }`
+                              }
+                            >
+                              {title}
+                            </NavLink>
+                          ))}
                         </div>
                       </>
                     ) : (
@@ -162,7 +203,7 @@ const Navbar = () => {
               {titre === "COURS" ? (
                 <>
                   <button
-                    onClick={() => setIsCoursesOpen(!isCoursesOpen)}
+                    onClick={() => setIsCoursOpen(!isCoursOpen)}
                     className="block w-full px-4 py-2 text-sm text-indigo-950 hover:text-pink-600 text-center"
                   >
                     COURS
@@ -181,9 +222,46 @@ const Navbar = () => {
                       ></path>
                     </svg>
                   </button>
-                  {isCoursesOpen && (
+                  {isCoursOpen && (
                     <div className="pl-4">
-                      {coursesLinks.map(({ path, title }) => (
+                      {coursLinks.map(({ path, title }) => (
+                        <Link
+                          key={path}
+                          to={path}
+                          onClick={handleLinkClick}
+                          className="block px-4 py-2 text-sm text-indigo-950 hover:text-pink-600"
+                        >
+                          {title}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </>
+              ) : titre === "PLANNING" ? (
+                <>
+                  <button
+                    onClick={() => setIsPlanningOpen(!isPlanningOpen)}
+                    className="block w-full px-4 py-2 text-sm text-indigo-950 hover:text-pink-600 text-center"
+                  >
+                    PLANNING
+                    <svg
+                      className="w-4 h-4 inline ml-2"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </button>
+                  {isPlanningOpen && (
+                    <div className="pl-4">
+                      {planningLinks.map(({ path, title }) => (
                         <Link
                           key={path}
                           to={path}

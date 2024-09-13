@@ -44,7 +44,7 @@ const tarifsList = [
     category: "enfant",
     titre: "ENFANTS",
     activite: "enfant",
-    date: "du 05.09 au 30.06",
+    date: "du 05.09 au 30.06 (2025)",
     details: [
       "______________",
       "250€ l'année",

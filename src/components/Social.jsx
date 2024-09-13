@@ -6,10 +6,10 @@ import { HiOutlineMail } from "react-icons/hi";
 
 const Social = () => {
   return (
-    <div className="hidden md:flex fixed flex-col top-2/3 left-3 z-30">
+    <div className="hidden md:flex fixed flex-col top-2/4 left-3 z-30">
       <ul className="z-30">
         {/* ----- FACEBOOK ----- */}
-        <li className="w-36 h-8 pr-2 flex rounded-r-lg justify-between items-center -ml-28 hover:-ml-3 duration-300 bg-indigo-800 z-30">
+        <li className="w-36 h-10 pr-2 flex rounded-r-lg justify-between items-center -ml-28 hover:-ml-3 duration-300 bg-indigo-800 z-30">
           <a
             href="https://www.facebook.com/profile.php?id=61563450955831"
             target="_blank"
@@ -22,7 +22,7 @@ const Social = () => {
         </li>
 
         {/* ----- INSTAGRAM ----- */}
-        <li className="w-36 h-8 pr-2 flex rounded-r-lg justify-between items-center -ml-28 hover:-ml-3 duration-300 bg-pink-600 z-30">
+        <li className="w-36 h-10 pr-2 flex rounded-r-lg justify-between items-center -ml-28 hover:-ml-3 duration-300 bg-pink-600 z-30">
           <a
             href="https://www.facebook.com/profile.php?id=61563450955831"
             target="_blank"
@@ -35,8 +35,8 @@ const Social = () => {
         </li>
 
         {/* ----- EMAIL ----- */}
-        {/* <li className="w-36 h-8 pr-2 flex rounded-r-lg justify-between items-center -ml-28 hover:-ml-3 duration-300 bg-green-700"> */}
-        <li className="w-36 h-8 pr-2 flex rounded-r-lg justify-between items-center -ml-28 hover:-ml-3 duration-300 bg-emerald-600">
+        {/* <li className="w-36 h-10 pr-2 flex rounded-r-lg justify-between items-center -ml-28 hover:-ml-3 duration-300 bg-green-700"> */}
+        <li className="w-36 h-10 pr-2 flex rounded-r-lg justify-between items-center -ml-28 hover:-ml-3 duration-300 bg-emerald-600">
           <a
             href="mailto:aerialpaysbasque@gmail.com"
             target="_blank"

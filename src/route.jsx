@@ -10,6 +10,7 @@ import Tissu from "./pages/Tissu";
 import Pilates from "./pages/Pilates";
 import Enfant from "./pages/Enfant";
 import MentionsLegales from "./pages/MentionsLegales ";
+import Info from "./pages/Info";
 
 // ! --- ROUTES CONFIG ---
 const routesConfig = [
@@ -36,7 +37,7 @@ const routesConfig = [
     path: "/cours",
     element: <Cours />,
 
-    // * Sous-Route : Tarifs*
+    // * Sous-Route : Cours*
     children: [
       { path: "cerceau", element: <Cerceau /> },
       { path: "tissu", element: <Tissu /> },
@@ -49,6 +50,12 @@ const routesConfig = [
     // ! Route : Planning
     path: "/planning",
     element: <Planning />,
+  },
+
+  {
+    // ! Route : Planning
+    path: "/infos",
+    element: <Info />,
   },
 
   {
