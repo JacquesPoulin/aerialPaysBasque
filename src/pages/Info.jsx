@@ -8,7 +8,6 @@ import { scrollToTop } from "../utils/functions";
 import promoList from "../data/promoList";
 
 const Info = () => {
-  // État pour la modale
   const [selectedImage, setSelectedImage] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -22,60 +21,52 @@ const Info = () => {
       once: true,
     });
 
-    // Détecter si on est sur un écran mobile
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Mobile si l'écran est plus petit que 768px
+      setIsMobile(window.innerWidth <= 768);
     };
 
-    handleResize(); // Appel initial pour définir l'état au chargement
+    handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Gérer le défilement de la page lorsque la modale est ouverte
   useEffect(() => {
     if (selectedImage) {
-      // Désactiver le scroll lorsque la modal est ouverte
       document.body.style.overflow = "hidden";
     } else {
-      // Réactiver le scroll lorsque la modal est fermée
       document.body.style.overflow = "auto";
     }
 
-    // Nettoyage lors du démontage du composant ou de la fermeture de la modal
     return () => {
       document.body.style.overflow = "auto";
     };
   }, [selectedImage]);
 
-  // Ouvrir la modal avec l'image sélectionnée
   const openModal = (image) => {
     setSelectedImage(image);
   };
 
-  // Fermer la modal
-  const closeModal = () => {
-    setSelectedImage(null);
+  const closeModal = (e) => {
+    if (e.target === e.currentTarget) {
+      setSelectedImage(null);
+    }
   };
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
-      {/* Bandeau de présentation */}
       <div className="w-full h-[20rem] overflow-hidden">
         <img
-          src="/assets/pics/logos/logo_test.jpg" // TODO Remplacer avec l'image appropriée
+          src="/assets/pics/logos/logo_test.jpg"
           alt="Bandeau de Planning"
           className="w-full h-full object-cover"
         />
       </div>
 
-      {/* Contenu principal */}
       <div
         className="max-w-6xl mx-auto py-8 px-4 sm:px-6 lg:px-8"
         data-aos="zoom-in"
       >
-        {/* Titre et sous-titre */}
         <div className="w-full flex flex-col md:flex-row justify-center items-center gap-4 md:gap-16 py-5 md:py-2">
           <div className="w-52 h-2 bg-purple-100 rounded-lg"></div>
           <h2
@@ -108,35 +99,29 @@ const Info = () => {
             </div>
           ))}
         </div>
-
-        {/* Modal pour afficher l'image en grand */}
-        {selectedImage && (
-          <div
-            className="fixed inset-0 z-[100] flex items-center justify-center bg-black bg-opacity-75"
-            onClick={closeModal} // Fermer la modal en cliquant sur l'arrière-plan
-          >
-            <div
-              className="relative max-w-4xl max-h-screen p-4 bg-white rounded-lg shadow-lg"
-              onClick={(e) => e.stopPropagation()} // Empêche la fermeture en cliquant sur l'image elle-même
-            >
-              {/* Bouton pour fermer la modal */}
-              <button
-                onClick={closeModal}
-                className="absolute top-2 right-2 text-indigo-500 text-5xl font-bold"
-              >
-                &times;
-              </button>
-
-              {/* Affichage de l'image en grand */}
-              <img
-                src={selectedImage.src}
-                alt={selectedImage.alt}
-                className="max-w-full max-h-screen rounded-lg shadow-lg"
-              />
-            </div>
-          </div>
-        )}
       </div>
+
+      {/* Modale pour afficher l'image agrandie */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50"
+          onClick={closeModal}
+        >
+          <div className="relative max-w-3xl w-full p-4">
+            <button
+              className="absolute top-0 right-0 p-2 text-white text-2xl"
+              onClick={() => setSelectedImage(null)}
+            >
+              &times;
+            </button>
+            <img
+              src={selectedImage.src}
+              alt={selectedImage.alt}
+              className="max-w-full max-h-screen object-contain mx-auto"
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
