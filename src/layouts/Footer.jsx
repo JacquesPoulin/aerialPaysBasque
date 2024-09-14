@@ -94,7 +94,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">CONTACT</h3>
             <ul className="space-y-2">
               {/* <li>AERIAL PAYS BASQUE</li> */}
-              <li>
+              {/* <li>
                 <a
                   href="https://www.google.com/maps?q=22+Avenue+Larochefoucauld,+64200+Biarritz,+France"
                   target="_blank"
@@ -104,7 +104,7 @@ const Footer = () => {
                 >
                   22 Avenue Larochefoucauld, 64200 Biarritz, France
                 </a>
-              </li>
+              </li> */}
               <li>
                 <button
                   onClick={() => setShowModal(true)}
