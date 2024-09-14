@@ -38,7 +38,7 @@ const Pilates = () => {
       <div className="w-full h-[21rem] overflow-hidden">
         <Link to="/galerie">
           <img
-            src="/assets/pics/pilates/laureen_4.jpg"
+            src="/assets/pics/autres/l4.jpg"
             alt="Pilates"
             className="w-full h-full object-cover"
           />
