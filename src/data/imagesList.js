@@ -22,11 +22,11 @@ const imagesList = {
     "/assets/pics/tissu/tissu_3.jpg",
   ],
   pilates: [
-    "/assets/pics/pilates/laureen_2.jpg",
-    "/assets/pics/pilates/laureen_4.jpg",
-    "/assets/pics/pilates/relaxation_1.jpg",
-    "/assets/pics/pilates/relaxation_2.jpg",
-    "/assets/pics/pilates/relaxation_3.jpg",
+    "/assets/pics/autres/l2.jpg",
+    "/assets/pics/autres/l4.jpg",
+    "/assets/pics/autres/r1.jpg",
+    "/assets/pics/autres/r2.jpg",
+    "/assets/pics/autres/r3.jpg",
   ],
   // infos: [
   //   "/assets/pics/autres/promo_2.jpg",
