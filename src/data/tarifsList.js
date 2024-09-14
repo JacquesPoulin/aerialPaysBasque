@@ -44,14 +44,16 @@ const tarifsList = [
     category: "enfant",
     titre: "ENFANTS",
     activite: "enfant",
-    date: "du 05.09 au 30.06 (2025)",
+    date: "du 13.09 au 30.06 (2025)",
     details: [
-      "______________",
+      "________________",
       "250€ l'année",
       "(25€ / mois)",
       "↪ PAYABLE EN 2 FOIS ↩",
       "----- ou -----",
       "100€ le trimestre",
+      "________________",
+      `>> ÉLIGIBLE " Pass'Sport " <<`,
     ],
   },
   {

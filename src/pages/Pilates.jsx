@@ -117,7 +117,7 @@ const Pilates = () => {
 
         <div className="relative mt-8">
           <img
-            src="/assets/pics/autres/pilates_infos.png"
+            src="/assets/pics/autres/pilates.jpg"
             alt=""
             className="w-full rounded-lg"
           />

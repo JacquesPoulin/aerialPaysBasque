@@ -77,7 +77,7 @@ const Planning = () => {
 
           <img
             // src="https://lenvoleepoledancestudio.fr/wp-content/uploads/2024/05/Planning-2024-2025_site_Plan-de-travail-1.png" // TODO : Remplacer avec l'image appropriée
-            src="/assets/pics/autres/planning_4.jpg"
+            src="/assets/pics/autres/planning1.jpg"
             alt="Planning 2024-2025"
             className="max-w-full h-auto rounded-lg shadow-lg"
           />

@@ -69,13 +69,13 @@ const Tissu = () => {
             </span>
             , le tissu aérien pourrait bien devenir votre allié incontournable !
           </p>
-          <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
+          {/* <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
             Bien que cette discipline exigeante demande de l'engagement, elle
             est divertissante et connaît un essor croissant à travers le monde.
-          </p>
+          </p> */}
 
           <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
-            Aussi appelé contorsion aérienne, ruban aérien ou simplement tissu,
+            ATravailler sous sa forme de hamac,
             cet art allie l&apos;
             <span className="text-pink-500 ">élégance</span> de la danse, la{" "}
             <span className="text-pink-500 ">force</span> des mouvements
