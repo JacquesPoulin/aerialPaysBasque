@@ -24,7 +24,7 @@ const Social = () => {
         {/* ----- INSTAGRAM ----- */}
         <li className="w-36 h-10 pr-2 flex rounded-r-lg justify-between items-center -ml-28 hover:-ml-3 duration-300 bg-pink-600 z-30">
           <a
-            href="https://www.facebook.com/profile.php?id=61563450955831"
+            href="https://www.instagram.com/aerial_paysbasque?igsh=MTEzYnJmc2ViZGtiaQ=="
             target="_blank"
             rel="noopener noreferrer"
             className="flex justify-between items-center w-full text-slate-50 pl-2 font-semibold"
