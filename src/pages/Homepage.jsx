@@ -80,7 +80,7 @@ const Homepage = () => {
                 data-aos="zoom-out-up"
               >
                 <img
-                  src="/assets/pics/cerceau/nature/moi.jpg"
+                  src="/assets/pics/autres/moi.jpg"
                   alt="Laureen Davant"
                   className="w-full h-[45rem] md:w-1/2 rounded-lg object-cover"
                 />
