@@ -1,11 +1,14 @@
 import { useEffect } from "react";
 
 import { Link } from "react-router-dom";
-
-// import BoutonSavoirPlus from "../layouts/BoutonSavoirPlus";
+import { scrollToTop } from "../utils/functions";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+useEffect(() => {
+  scrollToTop();
+}, []);
 
 const Homepage = () => {
   useEffect(() => {
@@ -129,8 +132,8 @@ const Homepage = () => {
                   </p>
 
                   <p className="text-base text-indigo-950 text-justify px-4 tracking-wide leading-5">
-                    C&apos;est durant ce dernier stage que je découvre le Pilates et
-                    les méthodes de renforcement douces.
+                    C&apos;est durant ce dernier stage que je découvre le
+                    Pilates et les méthodes de renforcement douces.
                   </p>
                 </div>
               </div>

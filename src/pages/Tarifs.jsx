@@ -4,12 +4,17 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import tarifsList from "../data/tarifsList";
 
+import { scrollToTop } from "../utils/functions";
+
 const Tarifs = () => {
   // ! État pour gérer la visibilité de la section "A la Carte"
   const [showAlaCarte, setShowAlaCarte] = useState(false);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    scrollToTop();
+  }, []);
+
+  useEffect(() => {
     AOS.init({
       duration: 1000,
       once: true,
@@ -75,7 +80,7 @@ const Tarifs = () => {
                       className="w-[22rem] max-w-xs mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-indigo-950 dark:border-gray-700 text-center flex flex-col"
                     >
                       {tarif.activite === "cerceau" && (
-                        <Link to="/galerie" title="Découvrir la galerie">
+                        <Link to="/cours/cerceau" title="Découvrir la galerie">
                           <img
                             className="rounded-t-lg object-cover h-48 w-full"
                             src="/assets/pics/cerceau/cerceau_4.jpg"
@@ -85,7 +90,7 @@ const Tarifs = () => {
                       )}
 
                       {tarif.activite === "pilates" && (
-                        <Link to="/galerie" title="Découvrir la galerie">
+                        <Link to="/cours/pilates" title="Découvrir la galerie">
                           <img
                             className="rounded-t-lg object-cover h-48 w-full"
                             src="/assets/pics/pilates/laureen_2.jpg"
@@ -95,7 +100,7 @@ const Tarifs = () => {
                       )}
 
                       {tarif.activite === "enfant" && (
-                        <Link to="/galerie" title="Découvrir la galerie">
+                        <Link to="/cours/enfants" title="Découvrir la galerie">
                           <img
                             className="rounded-t-lg object-cover h-48 w-full"
                             src="https://static.wixstatic.com/media/466954_7a36fa4e14f14330b33b595c74f0d2c0~mv2.jpg/v1/fill/w_449,h_539,al_c,q_80,enc_auto/Evie.jpg"
@@ -115,11 +120,12 @@ const Tarifs = () => {
                       </Link>
                       )} */}
                       <div className="p-4 flex flex-col flex-grow items-center">
-                        <a href="#">
+                        <Link to="/cours/cerceau">
                           <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-slate-50">
                             {tarif.titre}
                           </h5>
-                        </a>
+                        </Link>
+
                         {tarif.date && (
                           <p className="mb-3 text-slate-50 dark:text-slate-50 font-bold">
                             {tarif.date}
@@ -199,11 +205,11 @@ const Tarifs = () => {
               </Link>
 
               <div className="p-4 flex flex-col flex-grow">
-                <a href="#">
+                <Link to="/cours/pilates">
                   <h5 className="mb-2 text-xl font-bold tracking-tight text-slate-50 dark:text-slate-50">
                     {tarifsList.find((tarif) => tarif.type === "carte").titre}
                   </h5>
-                </a>
+                </Link>
                 <ul className="space-y-2 flex-grow">
                   {tarifsList
                     .find((tarif) => tarif.type === "carte")

@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 import { FaHandPointLeft } from "react-icons/fa";
 
 import BoutonGalerie from "../layouts/BoutonGalerie";
-// import BoutonReservation from "../layouts/BoutonReservation";
+
 import BoutonPreResa from "../layouts/BoutonPreResa";
+
+import { scrollToTop } from "../utils/functions";
 
 import { FaWhatsapp } from "react-icons/fa";
 
@@ -15,6 +17,11 @@ const style = { color: "#440d93", fontSize: "1.5em" };
 
 const Enfant = () => {
   const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+      scrollToTop();
+    }, []);
+
 
   useEffect(() => {
     AOS.init({
