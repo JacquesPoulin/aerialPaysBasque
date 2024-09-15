@@ -193,7 +193,7 @@ const Tarifs = () => {
               <Link to="/galerie" title="Découvrir la galerie">
                 <img
                   className="rounded-t-lg object-cover h-48 w-full"
-                  src="/assets/pics/pilates/laureen_4.jpg"
+                  src="/assets/pics/autres/l4.jpg"
                   alt=""
                 />
               </Link>
