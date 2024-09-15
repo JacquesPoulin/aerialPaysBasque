@@ -1,14 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaHandPointLeft } from "react-icons/fa";
-
 import BoutonGalerie from "../layouts/BoutonGalerie";
-
 import BoutonPreResa from "../layouts/BoutonPreResa";
-
 import { scrollToTop } from "../utils/functions";
-
-import { FaWhatsapp } from "react-icons/fa";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
