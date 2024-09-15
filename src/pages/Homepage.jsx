@@ -6,11 +6,11 @@ import { scrollToTop } from "../utils/functions";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-useEffect(() => {
-  scrollToTop();
-}, []);
-
 const Homepage = () => {
+  useEffect(() => {
+    scrollToTop();
+  }, []);
+
   useEffect(() => {
     AOS.init({
       duration: 1000, // Durée de l'animation

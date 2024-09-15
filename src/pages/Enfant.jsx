@@ -18,10 +18,9 @@ const style = { color: "#440d93", fontSize: "1.5em" };
 const Enfant = () => {
   const [isMobile, setIsMobile] = useState(false);
 
-    useEffect(() => {
-      scrollToTop();
-    }, []);
-
+  useEffect(() => {
+    scrollToTop();
+  }, []);
 
   useEffect(() => {
     AOS.init({
