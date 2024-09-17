@@ -43,7 +43,7 @@ const Planning = () => {
 
       {/* Contenu principal */}
       <div
-        className="max-w-5xl mx-auto py-8 px-4 sm:px-6 lg:px-8"
+        className="max-w-5xl 2xl:max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8"
         data-aos="zoom-in"
       >
         {/* Titre et sous-titre */}
@@ -68,7 +68,7 @@ const Planning = () => {
           {/* Pastille promotionnelle */}
           <div className=" my-4 mx-auto  text-red-600 text-xs py-1 rounded-lg animate-pulse">
             <p className="text-sm md:text-lg">
-              Adultes : Pas de cours la 2ème semaine des vacances scolaires{" "}.
+              Adultes : Pas de cours la 2ème semaine des vacances scolaires .
               <br />
               Enfants : Pas de cours pendant les vacances scolaires. <br />
               L'association est fermée durant les vacances de fin d'année.

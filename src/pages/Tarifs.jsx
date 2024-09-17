@@ -33,7 +33,7 @@ const Tarifs = () => {
       </div>
 
       <div className="flex flex-col items-center min-h-screen bg-gray-100 py-16">
-        <div className="w[50rem]" data-aos="zoom-in">
+        <div data-aos="zoom-in">
           {/* Titre et sous-titre */}
           <div className="w-full flex flex-col md:flex-row justify-center items-center gap-4 md:gap-16 py-5 md:py-2">
             <div className="w-52 h-2 bg-purple-100 rounded-lg"></div>

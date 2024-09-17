@@ -47,7 +47,7 @@ const Tissu = () => {
       </div>
 
       {/* Contenu principal */}
-      <div className="max-w-5xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-5xl 2xl:max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <h2
           className="text-4xl font-extrabold text-indigo-950 text-center mb-8"
           data-aos="zoom-in"
@@ -75,8 +75,7 @@ const Tissu = () => {
           </p> */}
 
           <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
-            ATravailler sous sa forme de hamac,
-            cet art allie l&apos;
+            ATravailler sous sa forme de hamac, cet art allie l&apos;
             <span className="text-pink-500 ">élégance</span> de la danse, la{" "}
             <span className="text-pink-500 ">force</span> des mouvements
             acrobatiques, et la magie des numéros aériens. Elle permet également

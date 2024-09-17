@@ -31,7 +31,7 @@ const Homepage = () => {
 
       {/* INTRO */}
       <div className="relative bg-gray-100 pt-16">
-        <div className="max-w-5xl mx-auto text-center relative z-10">
+        <div className="max-w-5xl 2xl:max-w-7xl mx-auto text-center relative z-10">
           {/* <h2
             className="text-4xl font-extrabold text-indigo-950 mb-10 -fast"
             data-aos="zoom-in"

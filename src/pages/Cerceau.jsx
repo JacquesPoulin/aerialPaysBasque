@@ -47,7 +47,7 @@ const Cerceau = () => {
       </div>
 
       {/* Contenu principal */}
-      <div className="max-w-5xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-5xl 2xl:max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <h2
           className="text-4xl font-extrabold text-indigo-950 text-center mb-8"
           data-aos="zoom-in"
@@ -124,8 +124,8 @@ const Cerceau = () => {
             .
           </p>
           <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
-            Ils durent 1h et sont composés d'un échauffement ciblé, d'un
-            corps de séance et d'étirements.
+            Ils durent 1h et sont composés d'un échauffement ciblé, d'un corps
+            de séance et d'étirements.
           </p>
 
           <p className="text-lg text-indigo-950 text-justify leading-relaxed mb-3">

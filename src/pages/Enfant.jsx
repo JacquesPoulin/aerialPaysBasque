@@ -48,7 +48,7 @@ const Enfant = () => {
       </div>
 
       {/* Contenu principal */}
-      <div className="max-w-5xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-5xl 2xl:max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
         <h2
           className="text-4xl font-extrabold text-indigo-950 text-center mb-8"
           data-aos="zoom-in"

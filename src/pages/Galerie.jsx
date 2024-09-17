@@ -80,7 +80,7 @@ const Galerie = () => {
 
           {/* Contenu principal */}
           <div
-            className="max-w-5xl mx-auto py-16 px-4 sm:px-6 lg:px-8"
+            className="max-w-5xl 2xl:max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8"
             data-aos="zoom-in"
           >
             <div className="w-full flex justify-center items-center gap-4">
