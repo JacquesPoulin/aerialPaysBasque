@@ -75,16 +75,17 @@ const Homepage = () => {
               </p>
 
               {/* Section Présentation */}
-              <div
-                className="flex flex-col md:flex-row gap-6 items-center md:items-start"
-                data-aos="zoom-out-up"
-              >
+              <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
                 <img
                   src="/assets/pics/autres/moi.jpg"
                   alt="Laureen Davant"
                   className="w-full h-[45rem] md:w-1/2 rounded-lg object-cover"
+                  data-aos="fade-right"
                 />
-                <div className="flex flex-col gap-4 w-full md:w-1/2">
+                <div
+                  className="flex flex-col gap-4 w-full md:w-1/2"
+                  data-aos="fade-left"
+                >
                   <h4 className="text-3xl text-indigo-800 tracking-wide">
                     Qui suis-je ?
                   </h4>
