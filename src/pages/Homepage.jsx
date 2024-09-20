@@ -79,7 +79,7 @@ const Homepage = () => {
                 <img
                   src="/assets/pics/autres/moi.jpg"
                   alt="Laureen Davant"
-                  className="w-full h-[45rem] md:w-1/2 rounded-lg object-cover"
+                  className="w-full h-[42.5rem] 2xl:h-[47rem] md:w-1/2 rounded-lg object-cover"
                   data-aos="fade-right"
                 />
                 <div
@@ -90,7 +90,7 @@ const Homepage = () => {
                     Qui suis-je ?
                   </h4>
 
-                  <p className="text-lg text-indigo-950 text-justify px-4 tracking-wide leading-5">
+                  <p className="text-lg 2xl:text-xl text-indigo-950 text-justify px-4 tracking-wide leading-5">
                     Je suis{" "}
                     <Link to="/galerie" title="Voir la galerie">
                       <span className="text-pink-600" title="Voir la galerie">
@@ -101,14 +101,14 @@ const Homepage = () => {
                     Pays Basque.
                   </p>
 
-                  <p className="text-base text-indigo-950 text-justify px-4 tracking-wide leading-5">
+                  <p className="text-base 2xl:text-lg text-indigo-950 text-justify px-4 2xl:px-1 tracking-wide leading-5">
                     Je pratique les disciplines aériennes depuis 2019, et
                     c&apos;est en 2022 que je décide de suivre une formation de
                     préparation à l&apos;enseignement afin de partager ma
                     passion et mes valeurs pour le sport.
                   </p>
 
-                  <p className="text-base text-indigo-950 text-justify px-4 tracking-wide leading-5">
+                  <p className="text-base 2xl:text-lg text-indigo-950 text-justify px-4 2xl:px-1 tracking-wide leading-5">
                     Ayant très vite compris que ce métier était fait pour moi,
                     je poursuis ma formation avec plusieurs modules techniques
                     auprès de Sophie Granjon et décide de continuer mon cursus
@@ -117,14 +117,14 @@ const Homepage = () => {
                     j&apos;obtiens en 2024.
                   </p>
 
-                  <p className="text-base text-indigo-950 text-justify px-4 tracking-wide leading-5">
+                  <p className="text-base 2xl:text-lg text-indigo-950 text-justify px-4 2xl:px-1 tracking-wide leading-5">
                     Durant la préparation de mon diplôme, je dois réaliser
                     plusieurs stages et je choisis de passer 6 mois à Oreka,
                     l&apos;école de cirque de Bayonne, où je suis formée à
                     l&apos;accompagnement des plus jeunes (de 4 à 15 ans).
                   </p>
 
-                  <p className="text-base text-indigo-950 text-justify px-4 tracking-wide leading-5">
+                  <p className="text-base 2xl:text-lg text-indigo-950 text-justify px-4 2xl:px-1 tracking-wide leading-5">
                     Ayant à cœur de pouvoir accueillir tous les publics, je
                     réalise également un stage dans une association affiliée
                     sport-santé, afin de côtoyer les plus âgés, mais aussi des
@@ -132,7 +132,7 @@ const Homepage = () => {
                     de longue durée.
                   </p>
 
-                  <p className="text-base text-indigo-950 text-justify px-4 tracking-wide leading-5">
+                  <p className="text-base 2xl:text-lg text-indigo-950 text-justify px-4 2xl:px-1 tracking-wide leading-5">
                     C&apos;est durant ce dernier stage que je découvre le
                     Pilates et les méthodes de renforcement douces.
                   </p>
