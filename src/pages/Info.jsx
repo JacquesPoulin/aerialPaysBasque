@@ -85,19 +85,33 @@ const Info = () => {
 
         {/* Galerie d'images */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {promoList.map((image, index) => (
-            <div
-              key={index}
-              className="overflow-hidden rounded-lg shadow-lg cursor-pointer"
-              onClick={() => openModal(image)}
-            >
-              <img
-                src={image.src}
-                alt={image.alt}
-                className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-          ))}
+          {promoList.map((image, index) => {
+            console.log(image); // Vérifie les valeurs dans la console
+            return (
+              <div key={index} className="overflow-hidden rounded-lg shadow-lg">
+                {!image.video ? (
+                  // Ouvre la modale uniquement si c'est une image
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300 cursor-pointer"
+                    onClick={() => openModal(image)}
+                  />
+                ) : (
+                  // Vidéo sans événement `onClick`
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    className="w-full h-96 object-cover"
+                  >
+                    <source src={image.srcVid} type={image.typeVid} />
+                    Your browser does not support the video tag.
+                  </video>
+                )}
+              </div>
+            );
+          })}
         </div>
       </div>
 
