@@ -15,7 +15,7 @@ const promoList = [
     video: false,
   },
   {
-    src: "/assets/pics/autres/halloween.jpg",
+    src: "/assets/pics/autres/atelier_2.jpg",
     alt: "Image info et promotion",
     video: false,
   },
