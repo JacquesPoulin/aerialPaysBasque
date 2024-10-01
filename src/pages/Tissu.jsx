@@ -75,7 +75,7 @@ const Tissu = () => {
           </p> */}
 
           <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
-            ATravailler sous sa forme de hamac, cet art allie l&apos;
+            Travaillé sous sa forme de hamac, cet art allie l&apos;
             <span className="text-pink-500 ">élégance</span> de la danse, la{" "}
             <span className="text-pink-500 ">force</span> des mouvements
             acrobatiques, et la magie des numéros aériens. Elle permet également
