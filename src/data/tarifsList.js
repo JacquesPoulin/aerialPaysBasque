@@ -2,7 +2,7 @@ const tarifsList = [
   {
     type: "abonnement",
     category: "adulte",
-    titre: "CERCEAU & PILATES",
+    titre: "CERCEAU ADULTES",
     activite: "cerceau",
     date: "du 05.09 au 30.06",
     details: [
