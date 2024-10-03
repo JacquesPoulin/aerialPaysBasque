@@ -7,10 +7,10 @@ const coursLinks = [
     path: "/cours/tissu",
     title: "Tissu Aérien",
   },
-  {
-    path: "/cours/pilates",
-    title: "Pilates",
-  },
+  // {
+  //   path: "/cours/pilates",
+  //   title: "Pilates",
+  // },
   {
     path: "/cours/enfants",
     title: "Enfants",

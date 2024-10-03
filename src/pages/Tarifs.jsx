@@ -173,14 +173,14 @@ const Tarifs = () => {
           </div>
 
           {/* Bouton pour afficher les autres options */}
-          <div className="mt-12 flex justify-center">
+          {/* <div className="mt-12 flex justify-center">
             <button
               className="p-2 text-slate-50 bg-indigo-900 rounded-md shadow hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-400"
               onClick={() => setShowAlaCarte(!showAlaCarte)}
             >
               {showAlaCarte ? "Masquer" : "Option supplémentaire"}
             </button>
-          </div>
+          </div> */}
         </div>
 
         {/* Section "A la Carte" */}
