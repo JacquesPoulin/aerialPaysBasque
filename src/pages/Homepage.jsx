@@ -19,7 +19,7 @@ const Homepage = () => {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen overflow-x-clip">
       {/* Image de bandeau */}
       <div className="w-full h-[21rem] overflow-hidden">
         <img

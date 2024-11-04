@@ -38,10 +38,10 @@ const Tissu = () => {
       <div className="w-full h-[21rem] overflow-hidden">
         <Link to="/galerie">
           <img
-            src="/assets/pics/cerceau/nature/cerceau_nature_1.jpg"
+            src="/assets/pics/tissu/tissu-1.jpg"
             // src="/assets/pics/tissu/IMG-20240913-WA0017.jpg"
             alt="Tissu aérien"
-            className="w-full h-full object-cover -mb-20"
+            className="w-full h-full object-cover"
           />
         </Link>
       </div>
