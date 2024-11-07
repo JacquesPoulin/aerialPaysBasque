@@ -41,7 +41,7 @@ const Tissu = () => {
             src="/assets/pics/tissu/tissu-1.jpg"
             // src="/assets/pics/tissu/IMG-20240913-WA0017.jpg"
             alt="Tissu aérien"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover max-w-full"
           />
         </Link>
       </div>

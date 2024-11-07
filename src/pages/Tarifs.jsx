@@ -28,19 +28,19 @@ const Tarifs = () => {
         <img
           src="/assets/pics/logos/logo_test.jpg"
           alt="Bandeau de présentation"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover max-w-full"
         />
       </div>
 
       <div className="flex flex-col items-center min-h-screen bg-gray-100 py-16">
         <div data-aos="zoom-in">
           {/* Titre et sous-titre */}
-          <div className="w-full flex flex-col md:flex-row justify-center items-center gap-4 md:gap-16 py-5 md:py-2">
-            <div className="w-52 h-2 bg-purple-100 rounded-lg"></div>
+          <div className="w-full flex flex-col md:flex-row justify-center items-center gap-4 md:gap-16 lg:gap-28 py-5 md:py-2 lg:py-4">
+            <div className="w-52 lg:w-64 h-2 bg-purple-100 rounded-lg"></div>
 
             <h2 className="text-4xl font-extrabold text-indigo-950">TARIFS</h2>
 
-            <div className="w-52 h-2 bg-purple-100 rounded-lg"></div>
+            <div className="w-52 lg:w-64 h-2 bg-purple-100 rounded-lg"></div>
           </div>
           <p className="text-center font-semibold text-indigo-950 mb-4">
             2024 - 2025

@@ -25,7 +25,7 @@ const Homepage = () => {
         <img
           src="/assets/pics/logos/logo_test.jpg"
           alt="Bandeau de présentation"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover max-w-full"
         />
       </div>
 
@@ -79,12 +79,12 @@ const Homepage = () => {
                 <img
                   src="/assets/pics/autres/moi.jpg"
                   alt="Laureen Davant"
-                  className="w-full h-[42.5rem] 2xl:h-[47rem] md:w-1/2 rounded-lg object-cover"
+                  className="w-full h-[42.5rem] 2xl:h-[47rem] md:w-1/2 rounded-lg object-cover max-w-full"
                   data-aos="fade-right"
                 />
                 <div
                   className="flex flex-col gap-4 w-full md:w-1/2"
-                  data-aos="fade-left"
+                  data-aos="fade"
                 >
                   <h4 className="text-3xl text-indigo-800 tracking-wide">
                     Qui suis-je ?

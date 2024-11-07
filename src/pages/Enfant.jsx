@@ -42,7 +42,7 @@ const Enfant = () => {
           <img
             src="/assets/pics/autres/e.jpg"
             alt="Enfants faisant du cerceau aérien"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover max-w-full"
           />
         </Link>
       </div>

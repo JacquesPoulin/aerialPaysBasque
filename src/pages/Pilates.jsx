@@ -40,7 +40,7 @@ const Pilates = () => {
           <img
             src="/assets/pics/autres/l4.jpg"
             alt="Pilates"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover max-w-full"
           />
         </Link>
       </div>

@@ -37,7 +37,7 @@ const Planning = () => {
         <img
           src="/assets/pics/logos/logo_test.jpg" // TODO Remplacer avec l'image appropriée
           alt="Bandeau de Planning"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover max-w-full"
         />
       </div>
 

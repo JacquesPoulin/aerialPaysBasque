@@ -78,7 +78,7 @@ const Contact = () => {
         <img
           src="/assets/pics/logos/logo_test.jpg"
           alt="Bandeau de présentation"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover max-w-full"
         />
       </div>
 
@@ -132,7 +132,11 @@ const Contact = () => {
         {/* Carte Google */}
         <div className="flex justify-center items-center mt-10 mb-20 px-4">
           {/* <img src="/assets/pics/cerceau/cerceau_7.jpg" alt="" className="w-2/3"/>{" "} */}
-          <img src="/assets/pics/cerceau/cerceau_4.jpg" alt="" className="w-2/3"/>{" "}
+          <img
+            src="/assets/pics/cerceau/cerceau_4.jpg"
+            alt=""
+            className="w-2/3"
+          />{" "}
         </div>
       </div>
       {showModal && <ContactOptions onClose={() => setShowModal(false)} />}

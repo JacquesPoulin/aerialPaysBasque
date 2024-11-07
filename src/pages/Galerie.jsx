@@ -74,7 +74,7 @@ const Galerie = () => {
             <img
               src="/assets/pics/logos/logo_test.jpg"
               alt="Bandeau galerie"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover max-w-full"
             />
           </div>
 
