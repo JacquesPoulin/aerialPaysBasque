@@ -26,7 +26,7 @@ const Tarifs = () => {
       {/* Image de bandeau */}
       <div className="w-full h-[21rem] overflow-hidden bg-gray-100">
         <img
-          src="/assets/pics/logos/logo_test.jpg"
+          src="/assets/pics/autres/bandeau_v2.jpg"
           alt="Bandeau de présentation"
           className="w-full h-full object-cover max-w-full"
         />

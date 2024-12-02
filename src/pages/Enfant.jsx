@@ -40,7 +40,7 @@ const Enfant = () => {
       <div className="w-full h-[21rem] overflow-hidden">
         <Link to="/galerie">
           <img
-            src="/assets/pics/autres/e.jpg"
+            src="/assets/pics/autres/enfant_cerceau.jpg"
             alt="Enfants faisant du cerceau aérien"
             className="w-full h-full object-cover max-w-full"
           />

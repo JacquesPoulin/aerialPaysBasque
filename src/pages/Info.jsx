@@ -85,33 +85,51 @@ const Info = () => {
 
         {/* Galerie d'images */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {promoList.map((image, index) => {
-            console.log(image); // Vérifie les valeurs dans la console
-            return (
-              <div key={index} className="overflow-hidden rounded-lg shadow-lg">
-                {!image.video ? (
-                  // Ouvre la modale uniquement si c'est une image
+          {promoList.map((image, index) => (
+            <div
+              key={index}
+              className="overflow-hidden rounded-lg shadow-lg relative aspect-square"
+            >
+              {!image.video ? (
+                <div className="relative h-full">
                   <img
                     src={image.src}
                     alt={image.alt}
-                    className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300 cursor-pointer"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 cursor-pointer"
                     onClick={() => openModal(image)}
                   />
-                ) : (
-                  // Vidéo sans événement `onClick`
+                  {image.evenementPasse && (
+                    <>
+                      <div className="absolute inset-0 bg-black/50"></div>
+                      <div className="absolute top-2 left-2 bg-black bg-opacity-50 text-white px-2 py-1 rounded-md text-sm">
+                        Événement passé
+                      </div>
+                    </>
+                  )}
+                </div>
+              ) : (
+                <div className="relative h-full">
                   <video
                     autoPlay
                     loop
                     muted
-                    className="w-full h-96 object-cover"
+                    className="w-full h-full object-cover"
                   >
                     <source src={image.srcVid} type={image.typeVid} />
                     Your browser does not support the video tag.
                   </video>
-                )}
-              </div>
-            );
-          })}
+                  {image.evenementPasse && (
+                    <>
+                      <div className="absolute inset-0 bg-black/50"></div>
+                      <div className="absolute top-2 left-2 bg-black/50 text-white px-2 py-1 rounded-md text-sm">
+                        Événement passé
+                      </div>
+                    </>
+                  )}
+                </div>
+              )}
+            </div>
+          ))}
         </div>
       </div>
 
