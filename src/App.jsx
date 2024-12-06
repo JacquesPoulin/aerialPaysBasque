@@ -1,11 +1,13 @@
 import "./App.css";
-
 import { Routes, Route } from "react-router-dom";
 import routesConfig from "./route";
 import Navbar from "./layouts/Navbar";
 import Footer from "./layouts/Footer";
+import { useGoogleAnalytics } from "./hooks/useGoogleAnalytics";
 
 const App = () => {
+  useGoogleAnalytics();
+
   return (
     <div className="App">
       <Navbar />
