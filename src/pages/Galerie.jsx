@@ -14,51 +14,47 @@ const Galerie = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [imagesLoaded, setImagesLoaded] = useState({});
 
   useEffect(() => {
     scrollToTop();
-  }, []);
+    AOS.init({ duration: 800, once: true });
 
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: true,
-    });
-
-    // Détecter si on est sur un écran mobile
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Par exemple, mobile si l'écran est plus petit que 768px
+      setIsMobile(window.innerWidth <= 768);
     };
-
-    handleResize(); // Appeler une fois pour initialiser
+    handleResize();
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   useEffect(() => {
-    const images = document.querySelectorAll("img");
-    let loadedImagesCount = 0;
+    const preloadImages = async () => {
+      const activeImages = imagesList[activeTab] || [];
+      const loadPromises = activeImages.map(
+        (src) =>
+          new Promise((resolve) => {
+            const img = new Image();
+            img.src = src;
+            img.onload = () => resolve(src);
+            img.onerror = () => resolve(src); // Gérer aussi les erreurs
+          })
+      );
 
-    images.forEach((image) => {
-      if (image.complete) {
-        loadedImagesCount++;
-      } else {
-        image.onload = () => {
-          loadedImagesCount++;
-          if (loadedImagesCount === images.length) {
-            // Ajouter un délai minimum avant de masquer le loader
-            setTimeout(() => setLoading(false), 3000); // 3000 ms = 3 secondes
-          }
-        };
-      }
-    });
+      await Promise.all(loadPromises);
+      setImagesLoaded((prev) => ({ ...prev, [activeTab]: true }));
+      setLoading(false);
+    };
 
-    if (loadedImagesCount === images.length) {
-      // Si toutes les images sont déjà chargées
-      setTimeout(() => setLoading(false), 3000);
-    }
-  }, []);
+    setLoading(true);
+    preloadImages();
+  }, [activeTab]);
+
+  const handleTabChange = (newTab) => {
+    setLoading(true);
+    setActiveTab(newTab);
+  };
 
   return (
     <div>
@@ -164,6 +160,7 @@ const Galerie = () => {
                           className="w-full h-auto max-w-full rounded-lg object-cover cursor-pointer"
                           src={src}
                           alt={`image-${id}-${index}`}
+                          loading="lazy"
                         />
                       </div>
                     ))}
