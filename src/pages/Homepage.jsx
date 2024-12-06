@@ -19,7 +19,7 @@ const Homepage = () => {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen overflow-x-clip">
+    <div className="flex flex-col min-h-screen overflow-hidden">
       {/* Image de bandeau */}
       <div className="w-full h-[21rem] overflow-hidden">
         <img
@@ -31,7 +31,7 @@ const Homepage = () => {
 
       {/* INTRO */}
       <div className="relative bg-gray-100 pt-16">
-        <div className="max-w-5xl 2xl:max-w-7xl mx-auto text-center relative z-10">
+        <div className="max-w-5xl 2xl:max-w-7xl mx-auto text-center relative z-10 px-4">
           {/* <h2
             className="text-4xl font-extrabold text-indigo-950 mb-10 -fast"
             data-aos="zoom-in"
@@ -142,11 +142,11 @@ const Homepage = () => {
 
             {/* BLOBS */}
             <div
-              className="absolute top-0 left-0 w-64 h-64 bg-indigo-200 rounded-full mix-blend-multiply filter blur-xl opacity-60 z-0"
+              className="absolute top-0 left-0 w-64 h-64 bg-indigo-200 rounded-full mix-blend-multiply filter blur-xl opacity-60 z-0 -translate-x-1/2 -translate-y-1/2"
               data-aos="fade-in"
             ></div>
             <div
-              className="absolute bottom-0 right-0 w-64 h-64 bg-pink-200 rounded-full mix-blend-multiply filter blur-xl opacity-60 z-0"
+              className="absolute bottom-0 right-0 w-64 h-64 bg-pink-200 rounded-full mix-blend-multiply filter blur-xl opacity-60 z-0 translate-x-1/2 translate-y-1/2"
               data-aos="fade-in"
             ></div>
           </div>
