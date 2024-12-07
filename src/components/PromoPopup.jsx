@@ -1,26 +1,29 @@
 import { useState, useEffect } from "react";
 
+// DATA concernant le promotion du moment (s'il y en a une)
+import { getCurrentPromotion } from "../data/promoPopUpList";
+
 const PromoPopup = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const currentPromo = getCurrentPromotion();
 
   useEffect(() => {
-    // Vérifie si l'utilisateur a déjà vu la popup
+    // Vérifie si l'utilisateur a déjà vu la popup promotionnelle
     const hasSeenPopup = localStorage.getItem("hasSeenPromoPopup");
 
-    if (!hasSeenPopup) {
+    if (currentPromo && !hasSeenPopup) {
       setIsOpen(true);
       localStorage.setItem("hasSeenPromoPopup", "true");
 
-      // Ferme automatiquement après 30 secondes
       const timer = setTimeout(() => {
         setIsOpen(false);
-      }, 30000);
+      }, 15000); // modale se ferme au bout de 15 secondes
 
       return () => clearTimeout(timer);
     }
   }, []);
 
-  if (!isOpen) return null;
+  if (!isOpen || !currentPromo) return null;
 
   return (
     <div
@@ -37,8 +40,8 @@ const PromoPopup = () => {
           ×
         </button>
         <img
-          src="/assets/pics/autres/promo_noel_2024.jpg"
-          alt="Promotion Noël 2024"
+          src={currentPromo.imageSrc}
+          alt={currentPromo.imageAlt}
           className="w-full h-auto rounded-lg shadow-2xl"
         />
       </div>
