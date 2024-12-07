@@ -17,7 +17,7 @@ const PromoPopup = () => {
 
       const timer = setTimeout(() => {
         setIsOpen(false);
-      }, 15000); // modale se ferme au bout de 15 secondes
+      }, 30000); // modale se ferme au bout de 30 secondes
 
       return () => clearTimeout(timer);
     }
