@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 
 import { scrollToTop } from "../utils/functions";
 
-// Tableau d'images promotionnelles et informationnelles
+// Tableau d'évènements promotionnelles et informationnelles
 import promoList from "../data/promoList";
 
 const Info = () => {
@@ -53,6 +53,58 @@ const Info = () => {
     }
   };
 
+  // Fonction pour vérifier si un événement est passé
+  const isEventPassed = (eventDate) => {
+    if (!eventDate) return false; // Les infos sans date ne sont jamais "passées"
+    const today = new Date();
+    const event = new Date(eventDate);
+    return event < today;
+  };
+
+  // Rendu des événements avec vérification dynamique
+  const renderEvent = (image, index) => (
+    <div
+      key={index}
+      className="overflow-hidden rounded-lg shadow-lg relative aspect-square"
+    >
+      {!image.video ? (
+        <div className="relative h-full">
+          <img
+            src={image.src}
+            alt={image.alt}
+            className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 cursor-pointer"
+            onClick={() => openModal(image)}
+          />
+
+          {isEventPassed(image.date) && (
+            <>
+              <div className="absolute inset-0 bg-black/50"></div>
+              <div className="absolute top-2 left-2 bg-black bg-opacity-50 text-white px-2 py-1 rounded-md text-sm">
+                Événement passé
+              </div>
+            </>
+          )}
+        </div>
+      ) : (
+        <div className="relative h-full">
+          <video autoPlay loop muted className="w-full h-full object-cover">
+            <source src={image.srcVid} type={image.typeVid} />
+            Votre navigateur ne supporte pas les vidéos.
+          </video>
+
+          {isEventPassed(image.date) && (
+            <>
+              <div className="absolute inset-0 bg-black/50"></div>
+              <div className="absolute top-2 left-2 bg-black/50 text-white px-2 py-1 rounded-md text-sm">
+                Événement passé
+              </div>
+            </>
+          )}
+        </div>
+      )}
+    </div>
+  );
+
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
       <div className="w-full h-[20rem] overflow-hidden">
@@ -85,51 +137,7 @@ const Info = () => {
 
         {/* Galerie d'images */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {promoList.map((image, index) => (
-            <div
-              key={index}
-              className="overflow-hidden rounded-lg shadow-lg relative aspect-square"
-            >
-              {!image.video ? (
-                <div className="relative h-full">
-                  <img
-                    src={image.src}
-                    alt={image.alt}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 cursor-pointer"
-                    onClick={() => openModal(image)}
-                  />
-                  {image.evenementPasse && (
-                    <>
-                      <div className="absolute inset-0 bg-black/50"></div>
-                      <div className="absolute top-2 left-2 bg-black bg-opacity-50 text-white px-2 py-1 rounded-md text-sm">
-                        Événement passé
-                      </div>
-                    </>
-                  )}
-                </div>
-              ) : (
-                <div className="relative h-full">
-                  <video
-                    autoPlay
-                    loop
-                    muted
-                    className="w-full h-full object-cover"
-                  >
-                    <source src={image.srcVid} type={image.typeVid} />
-                    Your browser does not support the video tag.
-                  </video>
-                  {image.evenementPasse && (
-                    <>
-                      <div className="absolute inset-0 bg-black/50"></div>
-                      <div className="absolute top-2 left-2 bg-black/50 text-white px-2 py-1 rounded-md text-sm">
-                        Événement passé
-                      </div>
-                    </>
-                  )}
-                </div>
-              )}
-            </div>
-          ))}
+          {promoList.map((image, index) => renderEvent(image, index))}
         </div>
       </div>
 
