@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { scrollToTop } from "../utils/functions";
 
+import PromoPopup from "../components/PromoPopup";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -20,6 +22,7 @@ const Homepage = () => {
 
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
+      <PromoPopup />
       {/* Image de bandeau */}
       <div className="w-full h-[21rem] overflow-hidden">
         <img
