@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { scrollToTop } from "../utils/functions";
 
 import PromoPopup from "../components/PromoPopup";
+import CookieConsent from "../components/CookieConsent";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -181,6 +182,7 @@ const Homepage = () => {
           title="Adhérer à l'association"
         ></iframe>
       </div>
+      <CookieConsent />
     </div>
   );
 };

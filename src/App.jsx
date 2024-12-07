@@ -4,6 +4,7 @@ import routesConfig from "./route";
 import Navbar from "./layouts/Navbar";
 import Footer from "./layouts/Footer";
 import { useGoogleAnalytics } from "./hooks/useGoogleAnalytics";
+import CookieConsent from "./components/CookieConsent";
 
 const App = () => {
   useGoogleAnalytics();
@@ -22,6 +23,7 @@ const App = () => {
         ))}
       </Routes>
       <Footer />
+      <CookieConsent />
     </div>
   );
 };
