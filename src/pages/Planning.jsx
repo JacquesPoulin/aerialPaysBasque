@@ -85,9 +85,9 @@ const Planning = () => {
 
         {/* Adresses des salles */}
         <div className="text-center mt-12 mb-24">
-          <h3 className="text-2xl font-semibold text-indigo-950 my-10">
+          {/* <h3 className="text-2xl font-semibold text-indigo-950 my-10">
             - Nos Salles -
-          </h3>
+          </h3> */}
           <div
             className={`${
               isMobile
@@ -96,7 +96,8 @@ const Planning = () => {
             }`}
           >
             <div>
-              <h4 className="text-xl font-semibold text-slate-800">Aériens</h4>
+              {/* <h4 className="text-xl font-semibold text-slate-800">Aériens</h4> */}
+              <h4 className="text-xl font-semibold text-slate-800 mb-5">Pour nous trouver...</h4>
               <p className="text-lg text-slate-700 mb-2">
                 Salle "Talia Danses du monde"
               </p>
@@ -117,7 +118,7 @@ const Planning = () => {
               </div>
             </div>
 
-            <div>
+            {/* <div>
               <h4 className="text-xl font-semibold text-slate-800">Pilates</h4>
               <p className="text-lg text-slate-700 mb-2">
                 Salle "Les Turbulents"
@@ -137,7 +138,7 @@ const Planning = () => {
                   Carte
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

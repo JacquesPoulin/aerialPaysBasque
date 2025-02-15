@@ -27,7 +27,7 @@ const CookieConsent = () => {
     <div className="fixed bottom-0 left-0 right-0 bg-white shadow-lg z-50 p-4">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-indigo-950 text-xs md:text-sm">
-          Nous utilisons des cookies pour analyser le trafic de notre site.
+          Nous utilisons des cookies pour analyser le trafic du site.
         </p>
         <div className="flex gap-4">
           <button
@@ -36,6 +36,7 @@ const CookieConsent = () => {
           >
             Accepter
           </button>
+
           <button
             onClick={handleRefuse}
             className="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg text-sm hover:bg-gray-300"
