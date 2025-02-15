@@ -6,10 +6,22 @@ const promoList = [
     date: null,
   },
   {
+    src: "/assets/pics/autres/promo_mars_2025_2.jpg",
+    alt: "Image info et promotion",
+    video: false,
+    date: "2025-03-08",
+  },
+  {
+    src: "/assets/pics/autres/promo_mars_2025.jpg",
+    alt: "Image info et promotion",
+    video: false,
+    date: "2025-03-07",
+  },
+  {
     src: "/assets/pics/autres/promo_noel_2024.jpg",
     alt: "Image info et promotion",
     video: false,
-    date: "2024-12-31", // >>> format YYYY-MM-DD
+    date: "2024-12-31",
   },
   {
     src: "/assets/pics/autres/atelier_dec.jpg",
