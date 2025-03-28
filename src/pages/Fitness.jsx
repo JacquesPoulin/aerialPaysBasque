@@ -75,9 +75,9 @@ const Fitness = () => {
           <p className="text-lg text-indigo-950 leading-relaxed mb-6 text-justify"></p>
           <p className="text-lg text-indigo-950 text-justify leading-relaxed mb-3">
             <ul>
-              <li>🥊 *Boxe* pour l’énergie et la coordination,</li>
+              <li>🥊 *Boxe* pour l’énergie et la coordination</li>
               <li>🧘‍♀️ *Pilates* pour la posture et le gainage</li>
-              <li>💃 *Mouvements de danse* pour la fluidité et l’amusement </li>
+              <li>💃 *Mouvements de danse* pour la fluidité et l’amusement</li>
               <li>🏋️‍♂️ *Circuit training*pour une tonicité complète</li>
             </ul>
           </p>

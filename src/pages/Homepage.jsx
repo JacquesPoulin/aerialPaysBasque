@@ -36,18 +36,13 @@ const Homepage = () => {
       {/* INTRO */}
       <div className="relative bg-gray-100 pt-16">
         <div className="max-w-5xl 2xl:max-w-7xl mx-auto text-center relative z-10 px-4">
-          {/* <h2
-            className="text-4xl font-extrabold text-indigo-950 mb-10 -fast"
-            data-aos="zoom-in"
-          >
-            Bienvenue chez Aerial Pays Basque
-          </h2> */}
           <p
             className="text-xl font-bold text-indigo-950  tracking-wide mb-8"
+            translate="no"
             data-aos="fade-in"
           >
-            Aerial Pays Basque est une association loi 1901 proposant des activités
-            sportives et de bien être accessibles à tous.
+            Aerial Pays Basque est une association loi 1901 proposant des
+            activités sportives et de bien être accessibles à tous.
           </p>
 
           <p className="text-sm italic font-bold text-indigo-950  tracking-wide">
@@ -61,7 +56,11 @@ const Homepage = () => {
               className="bg-white shadow-xl p-4 rounded-lg relative z-20"
               data-aos="fade-in"
             >
-              <p className="text-lg text-indigo-950" data-aos="zoom-in">
+              <p
+                className="text-lg text-indigo-950"
+                data-aos="zoom-in"
+                translate="no"
+              >
                 Chez Aerial Pays Basque, nous croyons que le bien-être quotidien
                 passe par une pratique sportive régulière et épanouissante.
               </p>
@@ -93,10 +92,17 @@ const Homepage = () => {
                     Qui suis-je ?
                   </h4>
 
-                  <p className="text-lg 2xl:text-xl text-indigo-950 text-justify px-4 tracking-wide leading-5">
+                  <p
+                    className="text-lg 2xl:text-xl text-indigo-950 text-justify px-4 tracking-wide leading-5"
+                    translate="no"
+                  >
                     Je suis{" "}
                     <Link to="/galerie" title="Voir la galerie">
-                      <span className="text-pink-600" title="Voir la galerie">
+                      <span
+                        className="text-pink-600"
+                        title="Voir la galerie"
+                        translate="no"
+                      >
                         Laureen Davant
                       </span>
                     </Link>

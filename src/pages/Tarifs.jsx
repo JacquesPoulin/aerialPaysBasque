@@ -156,7 +156,6 @@ const Tarifs = () => {
                         <button className="px-6 py-2 text-slate-50 bg-indigo-900 rounded-md shadow hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-400">
                           <a
                             href="mailto:aerialpaysbasque@gmail.com"
-                            // href="https://www.helloasso.com/associations/aerial-pays-basque/adhesions/adhesion-2024-2025"
                             target="_blank"
                             rel="noopener noreferrer"
                             title="Se pré-inscrire pour la prochaine rentrée 2025"
@@ -168,7 +167,6 @@ const Tarifs = () => {
                         <button className="px-6 py-2 text-slate-50 bg-indigo-900 rounded-md shadow hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-400">
                           <a
                             href="mailto:aerialpaysbasque@gmail.com"
-                            // href="https://www.helloasso.com/associations/aerial-pays-basque/adhesions/adhesion-2024-2025"
                             target="_blank"
                             rel="noopener noreferrer"
                             title="Inscription à l'association"
@@ -236,7 +234,6 @@ const Tarifs = () => {
               <button className="px-6 py-2 text-slate-50 bg-indigo-900 rounded-md shadow hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-400">
                 <a
                   href="mailto:aerialpaysbasque@gmail.com"
-                  // href="https://www.helloasso.com/associations/aerial-pays-basque/adhesions/adhesion-2024-2025"
                   target="_blank"
                   rel="noopener noreferrer"
                   title="Inscription à l'association"

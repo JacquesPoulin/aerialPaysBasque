@@ -30,7 +30,7 @@ const MentionsLegales = () => {
           Mentions Légales
         </h1>
 
-        <p className="text-indigo-950 leading-relaxed mb-4">
+        <p className="text-indigo-950 leading-relaxed mb-4" translate="no">
           Conformément à la Loi « Informatique et Libertés » n° 78-17 du 6
           janvier 1978, les informations vous concernant sont destinées à Aerial
           Pays Basque , responsable du traitement. Vous disposez d'un droit
@@ -46,7 +46,7 @@ const MentionsLegales = () => {
           </a>
           .
         </p>
-        <p className="text-indigo-950 leading-relaxed mb-4">
+        <p className="text-indigo-950 leading-relaxed mb-4" translate="no">
           En vous connectant à ce site édité et mis en ligne par Aerial Pays
           Basque , vous accédez à un contenu protégé par la loi, notamment par
           les dispositions du Code de la propriété intellectuelle.
@@ -70,14 +70,14 @@ const MentionsLegales = () => {
           préalable. En poursuivant votre visite de notre site vous acceptez de
           respecter les restrictions ci-dessus.
         </p>
-        <p className="text-indigo-950 leading-relaxed mb-4">
+        <p className="text-indigo-950 leading-relaxed mb-4" translate="no">
           Aerial Pays Basque se réserve le droit de modifier, à tout moment et
           sans préavis, le contenu de ce site. En outre, Aerial Pays Basque
           décline toute responsabilité en cas de retard, d'erreur ou d'omission
           quant au contenu des présentes pages de même qu'en cas d'interruption
           ou de non-disponibilité du service.
         </p>
-        <p className="text-indigo-950 leading-relaxed mb-4">
+        <p className="text-indigo-950 leading-relaxed mb-4" translate="no">
           La création de liens hypertextes vers le site d'Aerial Pays Basque
           ainsi que les liens hypertextes établis en direction d'autres sites à
           partir du site Aerial Pays Basque n'engagent pas la responsabilité

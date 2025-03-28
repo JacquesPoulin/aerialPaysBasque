@@ -121,6 +121,7 @@ const Contact = () => {
               <a
                 href="mailto:aerialpaysbasque@gmail.com"
                 className=" hover:text-pink-500"
+                translate="no"
                 title="Envoyer un mail"
               >
                 aerialpaysbasque@gmail.com

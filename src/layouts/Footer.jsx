@@ -93,18 +93,6 @@ const Footer = () => {
           <div className="mb-8 md:mb-0 text-center md:text-left">
             <h3 className="text-lg font-semibold mb-4">CONTACT</h3>
             <ul className="space-y-2">
-              {/* <li>AERIAL PAYS BASQUE</li> */}
-              {/* <li>
-                <a
-                  href="https://www.google.com/maps?q=22+Avenue+Larochefoucauld,+64200+Biarritz,+France"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-pink-100"
-                  title="Ouvrir avec Google Maps"
-                >
-                  22 Avenue Larochefoucauld, 64200 Biarritz, France
-                </a>
-              </li> */}
               <li>
                 <button
                   onClick={() => setShowModal(true)}
@@ -119,6 +107,7 @@ const Footer = () => {
                 <a
                   href="mailto:aerialpaysbasque@gmail.com"
                   className="text-gray-300 hover:text-pink-100"
+                  translate="no"
                   title="Envoyer un mail"
                 >
                   aerialpaysbasque@gmail.com
