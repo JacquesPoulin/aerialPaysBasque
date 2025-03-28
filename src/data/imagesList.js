@@ -13,6 +13,9 @@ const imagesList = {
     "/assets/pics/cerceau/cerceau-1.jpg",
     "/assets/pics/cerceau/cerceau-2.jpg",
   ],
+  fitness: [
+    "",
+  ],
   tissu: [
     "/assets/pics/tissu/tissu_1.jpg",
     "/assets/pics/tissu/tissu_2.jpg",
