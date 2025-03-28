@@ -46,9 +46,8 @@ const Homepage = () => {
             className="text-xl font-bold text-indigo-950  tracking-wide mb-8"
             data-aos="fade-in"
           >
-            Aerial Pays Basque est une association loi 1901 proposant des cours
-            de cerceau aérien, de tissu aérien et de pilates, pour tout public.
-            {/* (enfants à partir de 8 ans). */}
+            Aerial Pays Basque est une association loi 1901 proposant des activités
+            sportives et de bien être accessibles à tous.
           </p>
 
           <p className="text-sm italic font-bold text-indigo-950  tracking-wide">

@@ -87,7 +87,27 @@ const Info = () => {
         </div>
       ) : (
         <div className="relative h-full">
-          <video autoPlay loop muted className="w-full h-full object-cover">
+          <video
+            playsInline
+            muted
+            loop
+            className="w-full h-full object-cover"
+            ref={(el) => {
+              if (el) {
+                el.muted = true; // Force muted à true
+                // Tentative de lecture uniquement après interaction utilisateur
+                document.addEventListener(
+                  "touchstart",
+                  () => {
+                    el.play().catch((e) =>
+                      console.log("Lecture automatique impossible:", e)
+                    );
+                  },
+                  { once: true }
+                );
+              }
+            }}
+          >
             <source src={image.srcVid} type={image.typeVid} />
             Votre navigateur ne supporte pas les vidéos.
           </video>

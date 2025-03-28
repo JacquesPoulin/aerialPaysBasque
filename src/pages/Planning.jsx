@@ -77,7 +77,7 @@ const Planning = () => {
 
           <img
             // src="https://lenvoleepoledancestudio.fr/wp-content/uploads/2024/05/Planning-2024-2025_site_Plan-de-travail-1.png" // TODO : Remplacer avec l'image appropriée
-            src="/assets/pics/autres/planning_v2.jpg"
+            src="/assets/pics/autres/planning_v2.jpeg"
             alt="Planning 2024-2025"
             className="max-w-full h-auto rounded-lg shadow-lg"
           />
@@ -97,7 +97,9 @@ const Planning = () => {
           >
             <div>
               {/* <h4 className="text-xl font-semibold text-slate-800">Aériens</h4> */}
-              <h4 className="text-xl font-semibold text-slate-800 mb-5">Pour nous trouver...</h4>
+              <h4 className="text-xl font-semibold text-slate-800 mb-5">
+                Pour nous trouver...
+              </h4>
               <p className="text-lg text-slate-700 mb-2">
                 Salle "Talia Danses du monde"
               </p>

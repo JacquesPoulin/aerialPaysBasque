@@ -84,7 +84,17 @@ const Tarifs = () => {
                           <img
                             className="rounded-t-lg object-cover h-48 w-full"
                             src="/assets/pics/cerceau/cerceau_4.jpg"
-                            alt=""
+                            alt="Professeur de cerceau aérien"
+                          />
+                        </Link>
+                      )}
+
+                      {tarif.activite === "fitness" && (
+                        <Link to="/cours/cerceau" title="Découvrir la galerie">
+                          <img
+                            className="rounded-t-lg object-cover h-48 w-full"
+                            src="/assets/pics/fitness/fitness.jpeg"
+                            alt="Dame repliant son tapis de fitness"
                           />
                         </Link>
                       )}
