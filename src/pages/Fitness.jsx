@@ -106,11 +106,21 @@ const Fitness = () => {
               </li>
             </ul>
           </div>
-          <p className="text-lg text-justify text-indigo-950 leading-relaxed mb-6">
-            Objectifs ?...{" "}
-            <span className="text-pink-500 "> Brûler des calories</span>,{" "}
-            <span className="text-pink-500 ">renforcer ton corps</span> et{" "}
-            <span className="text-pink-500 ">améliorer ton endurance</span>
+          <p className="text-lg text-left text-indigo-950 leading-relaxed mb-6">
+            Objectifs ?
+            <span className="block mt-2 space-y-1">
+              <span className="text-pink-500 inline-block">
+                • Brûler des calories
+              </span>
+              <br />
+              <span className="text-pink-500 inline-block">
+                • Renforcer ton corps
+              </span>
+              <br />
+              <span className="text-pink-500 inline-block">
+                • Améliorer ton endurance
+              </span>
+            </span>
           </p>
           <p className="text-lg text-justify text-indigo-950 leading-relaxed mb-6">
             Le tout dans une ambiance motivante et bienveillante. Aucun
