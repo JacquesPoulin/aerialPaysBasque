@@ -199,28 +199,30 @@ const Navbar = () => {
       {isOpen && (
         <div className="lg:hidden mt-4 pb-5">
           {navlinksBurger.map(({ id, path, titre }) => (
-            <div key={id} className="relative flex flex-col items-center">
+            <div key={id} className="relative">
               {titre === "COURS" ? (
                 <>
                   <button
                     onClick={() => setIsCoursOpen(!isCoursOpen)}
                     className="block w-full px-4 py-2 text-sm text-indigo-950 hover:text-pink-600 text-center"
                   >
-                    COURS
-                    <svg
-                      className="w-4 h-4 inline ml-2"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M19 9l-7 7-7-7"
-                      ></path>
-                    </svg>
+                    <div className="flex items-center justify-center">
+                      <span>{titre}</span>
+                      <svg
+                        className="w-4 h-4 ml-2"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M19 9l-7 7-7-7"
+                        ></path>
+                      </svg>
+                    </div>
                   </button>
                   {isCoursOpen && (
                     <div className="pl-4">
@@ -229,7 +231,7 @@ const Navbar = () => {
                           key={path}
                           to={path}
                           onClick={handleLinkClick}
-                          className="block px-4 py-2 text-sm text-indigo-950 hover:text-pink-600"
+                          className="block px-4 py-2 text-sm text-indigo-950 hover:text-pink-600 text-center"
                         >
                           {title}
                         </Link>
@@ -243,21 +245,23 @@ const Navbar = () => {
                     onClick={() => setIsPlanningOpen(!isPlanningOpen)}
                     className="block w-full px-4 py-2 text-sm text-indigo-950 hover:text-pink-600 text-center"
                   >
-                    PLANNING
-                    <svg
-                      className="w-4 h-4 inline ml-2"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M19 9l-7 7-7-7"
-                      ></path>
-                    </svg>
+                    <div className="flex items-center justify-center">
+                      <span>{titre}</span>
+                      <svg
+                        className="w-4 h-4 ml-2"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M19 9l-7 7-7-7"
+                        ></path>
+                      </svg>
+                    </div>
                   </button>
                   {isPlanningOpen && (
                     <div className="pl-4">
@@ -266,7 +270,7 @@ const Navbar = () => {
                           key={path}
                           to={path}
                           onClick={handleLinkClick}
-                          className="block px-4 py-2 text-sm text-indigo-950 hover:text-pink-600"
+                          className="block px-4 py-2 text-sm text-indigo-950 hover:text-pink-600 text-center"
                         >
                           {title}
                         </Link>
@@ -278,7 +282,7 @@ const Navbar = () => {
                 <Link
                   to={path}
                   onClick={handleLinkClick}
-                  className="block px-4 py-2 text-sm text-indigo-950 hover:text-pink-600"
+                  className="block w-full px-4 py-2 text-sm text-indigo-950 hover:text-pink-600 text-center"
                 >
                   {titre}
                 </Link>

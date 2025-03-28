@@ -68,10 +68,7 @@ const Planning = () => {
           {/* Pastille promotionnelle */}
           <div className=" my-4 mx-auto  text-red-600 text-xs py-1 rounded-lg animate-pulse">
             <p className="text-sm md:text-lg">
-              Adultes : Pas de cours la 2ème semaine des vacances scolaires .
-              <br />
-              Enfants : Pas de cours pendant les vacances scolaires. <br />
-              L'association est fermée durant les vacances de fin d'année.
+              Pas de cours la 2ème semaine des vacances scolaires .
             </p>
           </div>
 
