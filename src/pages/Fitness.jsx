@@ -71,16 +71,41 @@ const Fitness = () => {
             <span className="text-pink-500 ">renforcement musculaire</span> tout
             en respectant ton corps ? *Fit & Strong* est fait pour toi !
           </p>
-          Ce cours ludique mêle différentes influences :
-          <p className="text-lg text-indigo-950 leading-relaxed mb-6 text-justify"></p>
-          <p className="text-lg text-indigo-950 text-justify leading-relaxed mb-3">
-            <ul>
-              <li>🥊 *Boxe* pour l’énergie et la coordination</li>
-              <li>🧘‍♀️ *Pilates* pour la posture et le gainage</li>
-              <li>💃 *Mouvements de danse* pour la fluidité et l’amusement</li>
-              <li>🏋️‍♂️ *Circuit training*pour une tonicité complète</li>
-            </ul>
+          <p className="text-lg text-justify text-indigo-950 mb-6">
+            Ce cours ludique mêle différentes influences :
           </p>
+          <div className="text-lg text-indigo-950 mb-6">
+            <ul className="space-y-2">
+              <li className="flex items-start">
+                <span className="mr-2">🥊</span>
+                <span>
+                  <span className="font-semibold">Boxe</span> pour l'énergie et
+                  la coordination
+                </span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2">🧘‍♀️</span>
+                <span>
+                  <span className="font-semibold">Pilates</span> pour la posture
+                  et le gainage
+                </span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2">💃</span>
+                <span>
+                  <span className="font-semibold">Mouvements de danse</span>{" "}
+                  pour la fluidité et l'amusement
+                </span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-2">🏋️‍♂️</span>
+                <span>
+                  <span className="font-semibold">Circuit training</span> pour
+                  une tonicité complète
+                </span>
+              </li>
+            </ul>
+          </div>
           <p className="text-lg text-justify text-indigo-950 leading-relaxed mb-6">
             Objectifs ?...{" "}
             <span className="text-pink-500 "> Brûler des calories</span>,{" "}
