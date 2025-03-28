@@ -21,15 +21,20 @@ const NavbarTitle = () => {
           src="/assets/pics/logos/Logo_1.png"
           alt="Logo association Aerial Pays Basque"
           className="w-20 h-20 hidden lg:block"
+          translate="no"
         />
       </Link>
       {/* <h1 className="relative text-xl font-bold text-indigo-950 tracking-widest animate-spin-slow"> */}
-      <h1 className="relative text-xl font-bold text-indigo-950 tracking-widest hover:animate-spin-slow">
+      <h1
+        className="relative text-xl font-bold text-indigo-950 tracking-widest hover:animate-spin-slow"
+        translate="no"
+      >
         <span className="relative z-10 flex">
           {letters.map((letter, index) => (
             <span
               key={index}
               className="inline-block"
+              translate="no"
               whileHover={{
                 x: Math.random() * 40 - 20,
                 y: Math.random() * 40 - 20,
