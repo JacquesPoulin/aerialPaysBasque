@@ -22,7 +22,7 @@ const Homepage = () => {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen overflow-hidden">
+    <div className="flex flex-col min-h-screen overflow-x-hidden">
       <PromoPopup />
       {/* Image de bandeau */}
       <div className="w-full h-[21rem] overflow-hidden">
@@ -110,14 +110,14 @@ const Homepage = () => {
                     Pays Basque.
                   </p>
 
-                  <p className="text-base 2xl:text-lg text-indigo-950 text-justify px-4 2xl:px-1 tracking-wide leading-5">
+                  <p className="text-base 2xl:text-lg text-indigo-950 text-justify px-4 2xl:px-1 tracking-wide leading-5 break-words">
                     Je pratique les disciplines aériennes depuis 2019, et
                     c&apos;est en 2022 que je décide de suivre une formation de
                     préparation à l&apos;enseignement afin de partager ma
                     passion et mes valeurs pour le sport.
                   </p>
 
-                  <p className="text-base 2xl:text-lg text-indigo-950 text-justify px-4 2xl:px-1 tracking-wide leading-5">
+                  <p className="text-base 2xl:text-lg text-indigo-950 text-justify px-4 2xl:px-1 tracking-wide leading-5 break-words">
                     Ayant très vite compris que ce métier était fait pour moi,
                     je poursuis ma formation avec plusieurs modules techniques
                     auprès de Sophie Granjon et décide de continuer mon cursus
@@ -126,14 +126,14 @@ const Homepage = () => {
                     j&apos;obtiens en 2024.
                   </p>
 
-                  <p className="text-base 2xl:text-lg text-indigo-950 text-justify px-4 2xl:px-1 tracking-wide leading-5">
+                  <p className="text-base 2xl:text-lg text-indigo-950 text-justify px-4 2xl:px-1 tracking-wide leading-5 break-words">
                     Durant la préparation de mon diplôme, je dois réaliser
                     plusieurs stages et je choisis de passer 6 mois à Oreka,
                     l&apos;école de cirque de Bayonne, où je suis formée à
                     l&apos;accompagnement des plus jeunes (de 4 à 15 ans).
                   </p>
 
-                  <p className="text-base 2xl:text-lg text-indigo-950 text-justify px-4 2xl:px-1 tracking-wide leading-5">
+                  <p className="text-base 2xl:text-lg text-indigo-950 text-justify px-4 2xl:px-1 tracking-wide leading-5 break-words">
                     Ayant à cœur de pouvoir accueillir tous les publics, je
                     réalise également un stage dans une association affiliée
                     sport-santé, afin de côtoyer les plus âgés, mais aussi des
@@ -141,7 +141,7 @@ const Homepage = () => {
                     de longue durée.
                   </p>
 
-                  <p className="text-base 2xl:text-lg text-indigo-950 text-justify px-4 2xl:px-1 tracking-wide leading-5">
+                  <p className="text-base 2xl:text-lg text-indigo-950 text-justify px-4 2xl:px-1 tracking-wide leading-5 break-words">
                     C&apos;est durant ce dernier stage que je découvre le
                     Pilates et les méthodes de renforcement douces.
                   </p>
@@ -163,7 +163,7 @@ const Homepage = () => {
       </div>
 
       {/* Section CTA button */}
-      <div className="flex flex-col md:flex-row justify-center items-center bg-gray-100 pb-20">
+      <div className="flex flex-col md:flex-row justify-center items-center bg-gray-100 pb-20 px-4 gap-4">
         {/* Première iframe */}
         <iframe
           id="haWidget"
@@ -182,7 +182,7 @@ const Homepage = () => {
           id="haWidget"
           allowtransparency="true"
           src="https://www.helloasso.com/associations/aerial-pays-basque/adhesions/adhesion-2024-2025/widget-bouton"
-          className="border-none h-[70px] w-[250px]"
+          className="border-none h-[70px] w-[250px] max-w-full"
           data-aos="fade-left"
           title="Adhérer à l'association"
         ></iframe>
