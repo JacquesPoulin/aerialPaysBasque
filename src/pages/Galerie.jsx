@@ -10,7 +10,7 @@ import { scrollToTop } from "../utils/functions";
 const Galerie = () => {
   const [activeTab, setActiveTab] = useState("cerceau");
   const [selectedImage, setSelectedImage] = useState(null);
-  const [isMobile, setIsMobile] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
   const [initialLoading, setInitialLoading] = useState(true); // Chargement initial de la page
   const [imagesLoaded, setImagesLoaded] = useState({});
 

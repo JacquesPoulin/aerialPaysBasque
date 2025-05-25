@@ -52,7 +52,7 @@ const Tissu = () => {
           className="text-4xl font-extrabold text-indigo-950 text-center mb-8"
           data-aos="zoom-in"
         >
-          Le Tissu Aérien
+          Tissu Aérien
         </h2>
 
         <div

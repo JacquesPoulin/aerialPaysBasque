@@ -35,12 +35,12 @@ const Pilates = () => {
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
       {/* Bandeau de présentation */}
-      <div className="w-full h-[21rem] overflow-hidden">
+      <div className="w-full h-[30rem] overflow-hidden">
         <Link to="/galerie">
           <img
-            src="/assets/pics/autres/l4.jpg"
-            alt="Pilates"
-            className="w-full h-full object-cover max-w-full"
+            src="/assets/pics/pilates/pilates_1.jpg"
+            alt="Pilates aérien"
+            className="w-full h-full object-cover object-center max-w-full"
           />
         </Link>
       </div>
@@ -51,7 +51,7 @@ const Pilates = () => {
           className="text-4xl font-extrabold text-indigo-950 text-center mb-8"
           data-aos="zoom-in"
         >
-          Le Pilates
+          Pilates aérien
         </h2>
 
         <div
@@ -59,81 +59,100 @@ const Pilates = () => {
           data-aos="zoom-in"
         >
           <p className="text-lg text-indigo-950 first-letter:text-xl first-letter:font-bold first-letter:ml-4 leading-relaxed mb-2 text-justify">
-            Le Pilates est une méthode sportive qui trouve ses origines au début
-            du 20ᵉ siècle. Il a été inventé par Joseph Pilates, un Allemand
-            passionné par le sport et la rééducation. Lorsqu&#39;il était
-            interné en Angleterre durant la Première Guerre mondiale, il
-            développa cette méthode pour aider ses compagnons à rester en forme
-            en utilisant des exercices basés sur le contrôle, la respiration, et
-            la concentration.
+            Le Pilates aérien est une version innovante du Pilates traditionnel,
+            réalisée à l'aide d'un hamac suspendu. Ce tissu soutient le corps
+            dans les exercices, permettant d'explorer les mouvements en
+            suspension, tout en respectant les principes fondamentaux du Pilates
+            : respiration, contrôle, précision et centrage.
           </p>
 
           <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
-            Le Pilates vise à{" "}
-            <span className="text-pink-500 ">
-              renforcer les muscles profonds
-            </span>
-            , <span className="text-pink-500 ">améliorer la posture</span>, et{" "}
-            <span className="text-pink-500 ">favoriser la souplesse</span>, tout
-            en <span className="text-pink-500 ">réduisant le stress</span>.
+            Cette méthode douce et efficace permet de :
+            <ul className="list-disc pl-6 mt-2">
+              <li className="text-pink-500 ">
+                renforcer les muscles profonds, notamment la sangle abdominale
+              </li>
+              <li className="text-pink-500">
+                améliorer la posture et l'alignement du corps
+              </li>
+              <li className="text-pink-500">
+                développer l'équilibre et la coordination
+              </li>
+              <li className="text-pink-500">
+                soulager les tensions articulaires grâce au travail en
+                décompression
+              </li>
+            </ul>
           </p>
 
           <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
-            Aujourd&#39;hui, cette discipline adaptée à tous les niveaux, est
-            pratiquée dans le monde entier, tant pour la remise en forme, la
-            rééducation et est particulièrement bénéfique pour ceux qui
-            cherchent à prévenir les blessures.
+            Le hamac devient un véritable allié pour approfondire certains
+            exercices, se challenger en toute sécurité et ressentir une légèreté
+            nouvelle dans le mouvement.{" "}
+            <span className="text-pink-500">Accessible à tous </span>, le
+            Pilates aérien s'adapte à chaque corps et offre un travail à la fois
+            intense, fluide et respectueux
           </p>
 
-          <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
+          {/* <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
             Elle peut être pratiquée seule ou en complément d'autres activités
             physiques pour un développement musculaire harmonieux.
-          </p>
+          </p> */}
 
-          <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
+          {/* <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
             <b>
               Que vous soyez débutant ou confirmé, nos cours sont adaptés à tous
               les niveaux !
             </b>
-          </p>
+          </p> */}
           <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-center">
-            Les cours de pilates ont lieu le : <b>Jeudi à 10h30</b> à la{" "}
+            Les cours de Pilates aérien ont lieu le : <b>Mercredi à 11h15</b> à
+            la{" "}
             <a
-              href="https://www.google.com/maps?q=22+Avenue+Larochefoucauld,+64200+Biarritz,+France"
+              href="https://www.google.com/maps?q=22+Avenue+Benjamin+Gomez,+64100+Bayonne,+France"
               target="_blank"
               rel="noopener noreferrer"
               className="text-indigo-500 hover:underline"
               title="Ouvrir avec Google Maps"
             >
-              <b>Salle Les Turbulents à Biarritz</b>
+              <b>Salle Talia Danses du Monde</b>
             </a>
             .
           </p>
-          <p className="text-lg text-indigo-950 leading-relaxed mb-2 text-justify">
-            Ils durent 1 h et sont constitués d’un échauffement, d’un corps de
-            séance et d’un retour au calme.
-          </p>
         </div>
 
-        <div className="relative mt-8">
-          <img
-            src="/assets/pics/autres/pilates.jpg"
-            alt=""
-            className="w-full rounded-lg"
-          />
-          {/* Conteneur pour les boutons */}
-          <div
-            className={`absolute inset-x-0 bottom-1 ${
-              isMobile ? "hidden" : "flex justify-around items-center"
-            }`}
-          >
-            <BoutonGalerie texte="Voir la Galerie" />
-            <BoutonReservation texte="Réserver mon 1er cours" />
-          </div>
+        <div
+          className={`${
+            isMobile
+              ? "flex flex-col justify-center items-center gap-2 mt-12"
+              : "flex justify-center items-center gap-8 mt-20"
+          }`}
+        >
+          <BoutonGalerie texte="Voir la Galerie" />
+          <BoutonReservation texte="Réserver mon 1er cours" />
         </div>
       </div>
     </div>
   );
 };
+
+//     <div className="relative mt-8">
+//       <img
+//         src="/assets/pics/autres/pilates.jpg"
+//         alt=""
+//         className="w-full rounded-lg"
+//       />
+//       {/* Conteneur pour les boutons */}
+//       <div
+//         className={`absolute inset-x-0 bottom-1 ${
+//           isMobile ? "hidden" : "flex justify-around items-center"
+//         }`}
+//       >
+//         <BoutonGalerie texte="Voir la Galerie" />
+//         <BoutonReservation texte="Réserver mon 1er cours" />
+//       </div>
+//     </div>
+//   </div>
+// </div>
 
 export default Pilates;

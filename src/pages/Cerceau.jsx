@@ -52,7 +52,7 @@ const Cerceau = () => {
           className="text-4xl font-extrabold text-indigo-950 text-center mb-8"
           data-aos="zoom-in"
         >
-          Le Cerceau Aérien
+          Cerceau Aérien
         </h2>
 
         <div
@@ -119,7 +119,7 @@ const Cerceau = () => {
               className="text-indigo-500 hover:underline"
               title="Ouvrir avec Google Maps"
             >
-              <b>Salle Talia Danses du Monde</b>
+              <b>Salle Talia Danses du Monde (Bayonne)</b>
             </a>
             .
           </p>

@@ -9,6 +9,7 @@ import Cerceau from "./pages/Cerceau";
 import Fitness from "./pages/Fitness";
 import Tissu from "./pages/Tissu";
 import Pilates from "./pages/Pilates";
+import Yoga from "./pages/Yoga";
 import Enfant from "./pages/Enfant";
 import MentionsLegales from "./pages/MentionsLegales ";
 import Info from "./pages/Info";
@@ -44,6 +45,7 @@ const routesConfig = [
       { path: "fitness", element: <Fitness /> },
       { path: "tissu", element: <Tissu /> },
       { path: "pilates", element: <Pilates /> },
+      { path: "yoga", element: <Yoga /> },
       { path: "enfants", element: <Enfant /> },
     ],
   },

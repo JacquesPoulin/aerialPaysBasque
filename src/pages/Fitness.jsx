@@ -36,7 +36,7 @@ const Fitness = () => {
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
       {/* Bandeau de présentation */}
-      <div className="w-full h-[21rem] overflow-hidden">
+      <div className="w-full h-[25rem] overflow-hidden">
         <Link to="/galerie">
           <img
             src="/assets/pics/fitness/fitness_homepage.jpeg"
