@@ -2,11 +2,16 @@ import { useEffect, useState } from "react";
 
 import { FaWhatsapp } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import { scrollToTop } from "../utils/functions";
+
 const ContactOptions = ({ onClose }) => {
+  useEffect(() => {
+    scrollToTop();
+  }, []);
+
   const handleOptionClick = (action) => {
     onClose(); // Ferme la modal
     if (action === "call") {

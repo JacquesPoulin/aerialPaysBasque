@@ -35,10 +35,10 @@ const Yoga = () => {
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
       {/* Bandeau de présentation */}
-      <div className="w-full h-[30rem] overflow-hidden">
+      <div className="w-full h-[26rem] overflow-hidden">
         <Link to="/galerie">
           <img
-            src="/assets/pics/yoga/yoga_3.JPEG"
+            src="/assets/pics/yoga/yoga_aerien_hero.jpg"
             alt="Yoga aérien"
             className="w-full h-full object-cover object-center max-w-full"
           />

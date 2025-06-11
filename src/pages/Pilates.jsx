@@ -35,10 +35,10 @@ const Pilates = () => {
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
       {/* Bandeau de présentation */}
-      <div className="w-full h-[30rem] overflow-hidden">
+      <div className="w-full h-[26rem] overflow-hidden">
         <Link to="/galerie">
           <img
-            src="/assets/pics/pilates/pilates_1.jpg"
+            src="/assets/pics/pilates/pilate_aerien_hero.jpg"
             alt="Pilates aérien"
             className="w-full h-full object-cover object-center max-w-full"
           />
