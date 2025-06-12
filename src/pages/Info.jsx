@@ -152,7 +152,7 @@ const Info = () => {
         </div>
 
         <p className="text-center font-semibold text-indigo-950 mb-10">
-          2024 - 2025
+          2025 - 2026
         </p>
 
         {/* Galerie d'images */}
