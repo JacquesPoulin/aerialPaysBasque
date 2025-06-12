@@ -66,9 +66,6 @@ const Tarifs = () => {
             Découvrez nos tarifs pour la saison{" "}
             <span className="text-pink-500">2025-2026</span>.
           </p>
-          <p className="text-m text-center text-indigo-950 mb-6">
-            Tous nos abonnements incluent la licence Sport pour Tous.
-          </p>
 
           <p className="text-lg text-center text-indigo-950 mb-8">
             <span className="bg-indigo-800 text-white px-3 py-1 rounded-lg font-bold animate-pulse">
