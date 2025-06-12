@@ -60,7 +60,7 @@ const Planning = () => {
         </div>
 
         <p className="text-center font-semibold text-indigo-950 mb-4">
-          2024 - 2025
+          2025 - 2026
         </p>
 
         {/* Image du planning */}
