@@ -73,7 +73,7 @@ const Planning = () => {
           </div>
 
           <img
-            src="/assets/pics/autres/nouveau_planning_2025-2026.jpeg"
+            src="/assets/pics/autres/nouveau_planning_2025-2026.jpg"
             alt="Planning 2025-2026"
             className="max-w-full h-auto rounded-lg shadow-lg"
           />
