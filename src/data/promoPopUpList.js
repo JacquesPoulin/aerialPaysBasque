@@ -1,4 +1,10 @@
 export const promotions = {
+  ete2025: {
+    imageSrc: "/assets/pics/autres/promo_juillet_2025.jpg",
+    imageAlt: "Promotion Noël 2024",
+    expirationDate: "2025-08-23T23:59:59",
+    isActive: true,
+  },
   noel2024: {
     imageSrc: "/assets/pics/autres/promo_noel_2024.jpg",
     imageAlt: "Promotion Noël 2024",

@@ -31,11 +31,15 @@ const PromoPopup = () => {
       style={{
         animation: "fadeIn 0.3s ease-in-out",
       }}
+      onClick={() => setIsOpen(false)} // Ferme la modale au clic sur le backdrop
     >
-      <div className="relative max-w-xl w-full mx-4">
+      <div
+        className="relative max-w-xl w-full mx-4"
+        onClick={(e) => e.stopPropagation()} // Empêche la fermeture au clic sur l'image
+      >
         <button
           onClick={() => setIsOpen(false)}
-          className="absolute -top-4 -right-4 w-8 h-8 flex items-center justify-center bg-white rounded-full text-gray-800 font-bold shadow-lg"
+          className="absolute -top-4 -right-4 w-8 h-8 flex items-center justify-center bg-white rounded-full text-gray-800 font-bold shadow-lg hover:bg-gray-100 transition-colors"
         >
           ×
         </button>

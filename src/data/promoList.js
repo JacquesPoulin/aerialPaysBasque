@@ -6,10 +6,10 @@ const promoList = [
     date: null,
   },
   {
-    src: "/assets/pics/autres/promo_mars_2025_2.jpg",
+    src: "/assets/pics/autres/promo_juillet_2025.jpg",
     alt: "Image info et promotion",
     video: false,
-    date: "2025-03-08",
+    date: "2025-08-24",
   },
   {
     src: "/assets/pics/autres/promo_mars_2025.jpg",
