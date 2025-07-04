@@ -60,7 +60,7 @@ const Planning = () => {
         </div>
 
         <p className="text-center font-semibold text-indigo-950 mb-4">
-          2024 - 2025
+          2025 - 2026
         </p>
 
         {/* Image du planning */}
@@ -73,9 +73,8 @@ const Planning = () => {
           </div>
 
           <img
-            // src="https://lenvoleepoledancestudio.fr/wp-content/uploads/2024/05/Planning-2024-2025_site_Plan-de-travail-1.png" // TODO : Remplacer avec l'image appropriée
-            src="/assets/pics/autres/planning_v2.jpeg"
-            alt="Planning 2024-2025"
+            src="/assets/pics/autres/nouveau_planning_2025-2026.jpg"
+            alt="Planning 2025-2026"
             className="max-w-full h-auto rounded-lg shadow-lg"
           />
         </div>

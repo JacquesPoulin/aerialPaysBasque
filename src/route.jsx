@@ -6,7 +6,7 @@ import Galerie from "./pages/Galerie";
 import Tarifs from "./pages/Tarifs";
 import Contact from "./pages/Contact";
 import Cerceau from "./pages/Cerceau";
-import Fitness from "./pages/Fitness";
+// import Fitness from "./pages/Fitness";
 import Tissu from "./pages/Tissu";
 import Pilates from "./pages/Pilates";
 import Yoga from "./pages/Yoga";
@@ -42,7 +42,7 @@ const routesConfig = [
     // * Sous-Route : Cours*
     children: [
       { path: "cerceau", element: <Cerceau /> },
-      { path: "fitness", element: <Fitness /> },
+      // { path: "fitness", element: <Fitness /> },
       { path: "tissu", element: <Tissu /> },
       { path: "pilates", element: <Pilates /> },
       { path: "yoga", element: <Yoga /> },

@@ -11,10 +11,10 @@ const coursLinks = [
     path: "/cours/yoga",
     title: "Yoga aérien",
   },
-  {
-    path: "/cours/fitness",
-    title: "Fit & Strong",
-  },
+  // {
+  //   path: "/cours/fitness",
+  //   title: "Fit & Strong",
+  // },
   // {
     //   path: "/cours/tissu",
     //   title: "Tissu Aérien",
