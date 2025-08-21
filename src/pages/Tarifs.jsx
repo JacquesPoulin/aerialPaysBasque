@@ -35,7 +35,6 @@ const Tarifs = () => {
     scrollToTop();
   };
 
-
   return (
     <div className="flex flex-col min-h-screen bg-indigo-100">
       {/* Bandeau de présentation */}

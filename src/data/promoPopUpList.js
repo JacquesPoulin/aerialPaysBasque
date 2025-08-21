@@ -1,15 +1,21 @@
 export const promotions = {
+  rentree2025: {
+    imageSrc: "/assets/pics/autres/aerial_planning_2.jpg",
+    imageAlt: "Portes ouvertes 2025",
+    expirationDate: "2025-09-14T13:59:59",
+    isActive: true,
+  },
   ete2025: {
     imageSrc: "/assets/pics/autres/promo_juillet_2025.jpg",
-    imageAlt: "Promotion Noël 2024",
-    expirationDate: "2025-08-23T23:59:59",
-    isActive: true,
+    imageAlt: "Promotion été 2025",
+    expirationDate: "2025-08-20T23:59:59",
+    isActive: false,
   },
   noel2024: {
     imageSrc: "/assets/pics/autres/promo_noel_2024.jpg",
     imageAlt: "Promotion Noël 2024",
     expirationDate: "2024-12-31T23:59:59",
-    isActive: true,
+    isActive: false,
   },
   // Exemple pour futures promotions
   // printemps2025: {
