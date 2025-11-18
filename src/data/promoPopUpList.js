@@ -1,4 +1,10 @@
 export const promotions = {
+  noel2025: {
+    imageSrc: "/assets/pics/autres/masterclass_dec_2025.jpeg",
+    imageAlt: "Masterclass Décembre 2025",
+    expirationDate: "2025-12-12T23:59:59",
+    isActive: true,
+  },
   rentree2025: {
     imageSrc: "/assets/pics/autres/aerial_planning_2.jpg",
     imageAlt: "Portes ouvertes 2025",

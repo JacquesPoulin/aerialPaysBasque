@@ -6,6 +6,12 @@ const promoList = [
     date: null,
   },
   {
+    src: "/assets/pics/autres/masterclass_dec_2025.jpeg",
+    alt: "Image info et promotion",
+    video: false,
+    date: "2025-12-13",
+  },
+  {
     src: "/assets/pics/autres/aerial_planning_2.jpg",
     alt: "Image info et promotion",
     video: false,
